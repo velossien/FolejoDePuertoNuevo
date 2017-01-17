@@ -6,22 +6,12 @@ const IMAGES = [
   {name: 'pup5', url: 'http://thewondrous.com/wp-content/uploads/2015/09/cute-puppies-pictures.jpg'}
 ];
 
-var React = require('react');
-var ReactRouter = require('react-router');
-
-const ImageBlock = (props) => (
-    <div>
-      {IMAGES.map(
-        (image) => 
-            <div className="outer">
-              <img src={image.url}/>
+const ImageBlock = function() {
+    IMAGES.map(function(image){
+        return (
+            <div className="imageContainer">
+                <a href={image.url}><img src={image.url}/></a>
             </div>
-      )}
-    </div>
-);
-
-const Home = () => (
-  <div className="image"><ImageBlock/></div>
-);
-
-module.exports = Home;
+        )
+    })
+};
