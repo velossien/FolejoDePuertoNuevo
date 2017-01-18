@@ -1,7 +1,11 @@
 var React = require('react');
 
-var Main = React.createClass({
-    render: function(){
+class Main extends React.Component {
+    constructor(props) {
+        super(props);
+     }
+
+     render(){
         return (
             <div className='main-container'> 
                 <div className="menubar">
@@ -15,8 +19,8 @@ var Main = React.createClass({
                 </div>
                 {this.props.children}
             </div>
-        )
+        );
     }
-});
+}
 
 module.exports = Main;
