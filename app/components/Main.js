@@ -1,4 +1,4 @@
-var React = require('react');
+import React, {Component} from 'react';
 
 class Main extends React.Component {
     constructor(props) {
@@ -23,4 +23,4 @@ class Main extends React.Component {
     }
 }
 
-module.exports = Main;
+export default Main;
