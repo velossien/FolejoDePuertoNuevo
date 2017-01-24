@@ -11,4 +11,4 @@ var routes = (
     </Router>
 );
 
-export default routes
+export default routes;
