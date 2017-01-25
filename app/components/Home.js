@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Gallery from '../js/Gallery.js';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 export default class Main extends React.Component {
     constructor(props) {

@@ -50,12 +50,18 @@ table {
 	border-spacing: 0;
 }
 
+.header {
+	img {
+		width: 100%;
+	}
+}
+
 .menubar {
 	ul {
 		background-color: #333;
-		position: fixed;
-		top: 0;
+		position: absolute;
 		width: 100%;
+		margin-bottom: 43px;
 		li {
 			float: right;
 			
@@ -94,13 +100,12 @@ table {
 	}
 }
 
-.homePage {
-	margin-top: 44px;
-}
+
 
 .gallery {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top:44px;
+	padding-top: 200px;
+
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 class Main extends React.Component {
     constructor(props) {
@@ -7,18 +8,21 @@ class Main extends React.Component {
 
      render(){
         return (
-            <div className='main-container'> 
-                <div className="menubar">
-                    <ul>
-                        <li id="homelink"><a href="index.html">KEVIN GRIMM</a></li>
-                        <li><a href="index.html">Contact</a></li>
-                        <li><a href="index.html">Other Media</a></li>
-                        <li><a href="index.html">Paintings</a></li>
-                        <li><a href="index.html">Photos</a></li>
-                    </ul>
-                </div>
-                {this.props.children}
-            </div>
+                    <div className='main-container'> 
+                        <Sticky>
+                            <div className="menubar">
+                                <ul>
+                                    <li id="homelink"><a href="index.html">KEVIN GRIMM</a></li>
+                                    <li><a href="index.html">Contact</a></li>
+                                    <li><a href="index.html">Other Media</a></li>
+                                    <li><a href="index.html">Paintings</a></li>
+                                    <li><a href="index.html">Photos</a></li>
+                                </ul>
+                            </div>      
+                        </Sticky>
+                        {this.props.children}
+                    </div>
+
         );
     }
 }
