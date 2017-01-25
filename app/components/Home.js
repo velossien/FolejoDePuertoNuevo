@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Gallery from 'react-photo-gallery';
+import Gallery from '../js/Gallery.js';
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -446,15 +446,6 @@ const images = [
         aspectRatio: 1.00,
         lightboxImage:{
             src: 'dist/img/fullSize/kevin-grimm-returning-home.jpg'
-        }
-    },
-    { 
-        src: 'dist/img/thumbnails/kevin-grimm-aftermath.jpg',  
-        width: 300,
-        height: 300,
-        aspectRatio: 1.00,
-        lightboxImage:{
-            src: 'dist/img/fullSize/kevin-grimm-aftermath.jpg'
         }
     },
     { 
