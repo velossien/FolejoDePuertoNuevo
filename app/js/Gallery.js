@@ -111,9 +111,6 @@ var Gallery = (function (_React$Component) {
 												if (this.state.containerWidth >=700) {
 																rowLimit = 5;
 												}
-												if (this.state.containerWidth >= 1280) {
-																rowLimit = 7;
-												}
 												
 												var contWidth = this.state.containerWidth - rowLimit * 4; /* 4px for margin around each image*/
 												contWidth = Math.floor(contWidth - 2); // add some padding to prevent layout prob
