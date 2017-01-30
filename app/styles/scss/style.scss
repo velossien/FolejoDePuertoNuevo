@@ -149,3 +149,22 @@ header {
 .clearLeft{
     clear: left;
 }
+
+.About {
+	color: white;
+	h1{		
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	p{
+		font-size: 1em;
+		text-align: center;
+		text-decoration: none;	
+	}
+
+	ul{
+		text-align: center;
+	}
+}
