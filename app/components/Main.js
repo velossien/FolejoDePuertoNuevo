@@ -9,22 +9,28 @@ class Main extends React.Component {
 
      render(){
         return (
-            <StickyContainer>
-                <div className='main-container'>
-                    <Sticky>   
-                        <div className="menubar">
-                            <ul>
-                                <li id="homelink"><a href="index.html">KEVIN GRIMM</a></li>
-                                <li><a href="index.html">Contact</a></li>
-                                <li><a href="index.html">Other Media</a></li>
-                                <li><a href="index.html">Paintings</a></li>
-                                <li><a href="index.html">Photos</a></li>
-                            </ul>
-                        </div> 
-                    </Sticky>
-                    <ImageGallery/>
-                </div>
-            </StickyContainer>
+            <div className='mainContainer'>
+                <header>
+                    <div className="artistBlock">
+                        <img className="artistImg" src="dist/img/artistImgBrown.png"/>
+                        <h1> KEVIN GRIMM </h1>
+                        <br/>
+                        <h3> Environmental concept artist and character designer </h3>
+                    </div>
+                        <img className="banner" src='dist/img/banner.jpg'/>
+                </header>
+                <StickyContainer>
+                        <Sticky>   
+                            <div className="menubar">
+                                <ul>
+                                    <li><a href="index.html">Portfolio</a></li>
+                                    <li><a href="index.html">About</a></li>
+                                </ul>
+                            </div> 
+                        </Sticky>
+                        <ImageGallery/>
+                </StickyContainer>
+            </div>
 
         );
     }

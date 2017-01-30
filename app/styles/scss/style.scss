@@ -50,23 +50,69 @@ table {
 	border-spacing: 0;
 }
 
+/*-----------Header/Banner-----------*/
+
 header {
-	img {
+	margin-left: 2px;
+	margin-right: 3px;
+	position: relative;
+	.banner {
 		display:block;
 		width: 100%;
+		position: relative;
+	}
+	.artistBlock {
+		position: absolute;
+		bottom: 10%;
+		z-index: 1;
+		color: white;
+		width: 100%;
+
+		h1{		
+			font-size: 2em;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		h3{
+			font-size: 1em;
+			text-align: center;	
+		}
+			
+		.artistImg {
+			position: relative;
+			width: 100px;
+			left: 50%;
+			margin-left: -50px;	
+		}
 	}
 }
 
+.mainContainer {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .menubar {
+	text-align: center;
+	background-color: #333;
+	margin-left: 2px;
+	margin-right: 4px;
+	
 	ul {
 		background-color: #333;
-		position: absolute;
-		width: 100%;
+		text-align: center;
+		position: relative;
+		display:inline-block;		
 		font-size: 1.5em;
 		line-height: 33px;
   		vertical-align: middle;
+				
 		li {
-			float: right;
+			float: left;
+			
+			
 			
 			a {
 				display: block;
@@ -82,17 +128,8 @@ header {
 	}
 }
 
-#homelink {
-	float:left;
-	font-size: 2em;
-}
-
 .gallery {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 60px;
-
+	width: 100%;
 }
 
 .clearfix:after {
