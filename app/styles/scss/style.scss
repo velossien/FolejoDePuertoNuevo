@@ -17,7 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -50,20 +50,69 @@ table {
 	border-spacing: 0;
 }
 
-.header {
-	img {
+/*-----------Header/Banner-----------*/
+
+header {
+	margin-left: 2px;
+	margin-right: 3px;
+	position: relative;
+	.banner {
+		display:block;
 		width: 100%;
+		position: relative;
+	}
+	.artistBlock {
+		position: absolute;
+		bottom: 10%;
+		z-index: 1;
+		color: white;
+		width: 100%;
+
+		h1{		
+			font-size: 2em;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		h3{
+			font-size: 1em;
+			text-align: center;	
+		}
+			
+		.artistImg {
+			position: relative;
+			width: 100px;
+			left: 50%;
+			margin-left: -50px;	
+		}
 	}
 }
 
+.mainContainer {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .menubar {
+	text-align: center;
+	background-color: #333;
+	margin-left: 2px;
+	margin-right: 4px;
+	
 	ul {
 		background-color: #333;
-		position: absolute;
-		width: 100%;
-		margin-bottom: 43px;
+		text-align: center;
+		position: relative;
+		display:inline-block;		
+		font-size: 1.5em;
+		line-height: 33px;
+  		vertical-align: middle;
+				
 		li {
-			float: right;
+			float: left;
+			
+			
 			
 			a {
 				display: block;
@@ -79,33 +128,43 @@ table {
 	}
 }
 
-#homelink {
-	float:left;
-}
-
-.image {
-	margin-top:44px;
-	div {
-		div {
-			height:250px;
-			width:250px;
-			overflow:hidden;
-			float:left;
-			margin:1px;					
-			img{
-				height:250px;
-				width:auto;
-			}
-		}
-	}
-}
-
-
-
 .gallery {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 200px;
+	width: 100%;
+}
 
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+.clearfix { display: inline-block; }
+
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.clearLeft{
+    clear: left;
+}
+
+.About {
+	color: white;
+	h1{		
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	p{
+		font-size: 1em;
+		text-align: center;
+		text-decoration: none;	
+	}
+
+	ul{
+		text-align: center;
+	}
 }
