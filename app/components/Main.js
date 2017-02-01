@@ -12,7 +12,7 @@ class Main extends React.Component {
         return (
             <div className='mainContainer'>
                 <header>
-                    <div className="artistBlock"   id="Gallery">
+                    <div className="artistBlock">
                         <img className="artistImg" src="dist/img/artistImgBrown.png"/>
                         <h1> KEVIN GRIMM </h1>
                         <br/>

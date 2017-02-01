@@ -17,7 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -63,27 +63,26 @@ header {
 	}
 	.artistBlock {
 		position: absolute;
-		bottom: 10%;
+		bottom: 5%;
 		z-index: 1;
 		color: white;
 		width: 100%;
 
-		h1{		
-			font-size: 2em;
-			font-weight: bold;
-			text-align: center;
-		}
-
-		h3{
-			font-size: 1em;
-			text-align: center;	
-		}
-			
 		.artistImg {
 			position: relative;
 			width: 100px;
 			left: 50%;
 			margin-left: -50px;	
+		}
+		h1{		
+				font-size: 2em;
+				font-weight: bold;
+				text-align: center;
+		}
+		h3{
+			font-size: 1em;
+			text-align: center;
+			font-weight: 400;		
 		}
 	}
 }
@@ -105,15 +104,13 @@ header {
 		text-align: center;
 		position: relative;
 		display:inline-block;		
-		font-size: 1.5em;
-		line-height: 33px;
+		font-size: 1em;
+		line-height: 20px;
   		vertical-align: middle;
 				
 		li {
 			float: left;
-			
-			
-			
+
 			a {
 				display: block;
 				color: #fff;
@@ -152,19 +149,56 @@ header {
 
 .About {
 	color: white;
+	line-height: 2em;
+	letter-spacing: 0.5px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	
 	h1{		
-		font-size: 2em;
+		font-size: 1.5em;
 		font-weight: bold;
 		text-align: center;
+		padding-bottom: 10px;
+		padding-top:50px;
+	}
+
+	h2{
+		font-size: 1.2em;
+		font-weight: bold;
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top:20px;
 	}
 
 	p{
-		font-size: 1em;
+		font-size: 0.95em;
 		text-align: center;
-		text-decoration: none;	
-	}
+		text-decoration: none;
+		padding-bottom: 10px;
+	}	
 
 	ul{
 		text-align: center;
+		text-decoration: none;
+		padding-bottom: 10px;
+	}
+
+	a{
+		text-decoration:none;
+		color: #6e74a3;
+	}
+
+	a:hover {
+		color: #4da5a3;
+	}
+
+	.line{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 30%;
+		border-bottom: 1px solid rgba(#fff,0.50)
 	}
 }
