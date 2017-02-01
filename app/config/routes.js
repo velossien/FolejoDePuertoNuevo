@@ -1,7 +1,8 @@
 import React, {Component} from 'react'; 
 import { Router, Route, IndexRoute, hashHistory} from 'react-router';
 import Main from '../components/Main';
-import Home from '../components/Home';
+import ImageGallery from '../components/ImageGallery';
+import About from '../components/About';
 import Gallery from '../js/Gallery';
 import { StickyContainer, Sticky } from 'react-sticky';
 
@@ -9,7 +10,9 @@ var routes = (
     <StickyContainer>
         <Router history={hashHistory}>
             <Route path='/' component ={Main}>
-                <IndexRoute component={Home}/>
+                <IndexRoute component={ImageGallery}/>
+                    <Route path='/ImageGallery' component ={ImageGallery}/>
+                    <Route path='/About' component ={About}/>
             </Route>
         </Router>
     </StickyContainer>
