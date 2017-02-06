@@ -1,3 +1,11 @@
+$font-stack: 'Open Sans', sans-serif;
+$primary-color: #141414;
+$secondary-color: #2b2b2b;
+$primary-text-color: #fff;
+$link-color: #a1a1a1;
+$link-hover-color:#fff;
+$menubar-link-hover-color: #111;
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,7 +25,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $font-stack
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -28,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	background-color: #000000;
+	background-color: $primary-color;
 }
 
 ol, ul {
@@ -57,15 +65,14 @@ header {
 	margin-right: 3px;
 	position: relative;
 	.banner {
-		display:block;
-		width: 100%;
+		max-width: 100%;
 		position: relative;
 	}
 	.artistBlock {
 		position: absolute;
 		bottom: 5%;
 		z-index: 1;
-		color: white;
+		color: $primary-text-color;
 		width: 100%;
 
 		.artistImg {
@@ -95,12 +102,12 @@ header {
 
 .menubar {
 	text-align: center;
-	background-color: #333;
+	background-color: $secondary-color;
 	margin-left: 2px;
-	margin-right: 4px;
+	margin-right: 3px;
 	
 	ul {
-		background-color: #333;
+		background-color: $secondary-color;
 		text-align: center;
 		position: relative;
 		display:inline-block;		
@@ -113,13 +120,13 @@ header {
 
 			a {
 				display: block;
-				color: #fff;
+				color: $primary-text-color;
 				text-decoration:none;
 				text-align: center;
 				padding: 14px 16px;
 			}
 			a:hover {
-				background-color: #111;
+				background-color: $primary-color;
 			}
 		}
 	}
@@ -148,7 +155,7 @@ header {
 }
 
 .About {
-	color: white;
+	color: $primary-text-color;
 	line-height: 2em;
 	letter-spacing: 0.5px;
 	max-width: 700px;
@@ -186,11 +193,11 @@ header {
 
 	a{
 		text-decoration:none;
-		color: #6e74a3;
+		color: $link-color;
 	}
 
 	a:hover {
-		color: #4da5a3;
+		color: $link-hover-color;
 	}
 
 	.line{
@@ -200,5 +207,38 @@ header {
 		margin-bottom: 20px;
 		width: 30%;
 		border-bottom: 1px solid rgba(#fff,0.50)
+	}
+}
+
+@media screen and (max-width: 1400px){
+	.mainContainer {
+		width: 80%;	
+	}
+}
+
+@media screen and (max-width: 1400px){
+	.mainContainer {
+		width: 80%;	
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.mainContainer {
+		width: 100%;	
+	}
+}
+
+@media screen and (max-width: 800px){
+	.artistBlock {
+		height: 40px;
+		display:block;
+		padding-top:5px;
+		position: relative !important;}
+	.artistImg {display:none;}
+	.banner {display:none;}
+	h3 {display:none;}	
+	.About {
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 }
