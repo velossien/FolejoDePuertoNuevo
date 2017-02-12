@@ -13,6 +13,9 @@ export default class ImageGallery extends React.Component {
                 <div className="gallery">
                     <Gallery photos={images} />
                 </div>
+                <div className="copyright">
+                    <p>&copy; 2017 Grimm</p>
+                </div>
             </div>
         );
     }

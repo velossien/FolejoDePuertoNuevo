@@ -23,6 +23,9 @@ class About extends React.Component {
             <div className="line"></div>
             <h2> CONTACT </h2>
             <p>Email: <a href="mailto:kevingrimmartist@gmail.com">kevingrimmartist@gmail.com</a></p>
+            <div className="copyright">
+                    <p>&copy; 2017 Grimm</p>
+            </div>
         </div>
         );
     }

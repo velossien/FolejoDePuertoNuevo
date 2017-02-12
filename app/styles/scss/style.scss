@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background-color: $primary-color;
+	overflow-y:scroll;
 }
 
 ol, ul {
@@ -56,6 +57,13 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.copyright{
+	font-size:0.7em;
+	color: $primary-text-color;
+	text-align:center;
+	padding: 10px;
 }
 
 /*-----------Header/Banner-----------*/
