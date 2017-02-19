@@ -13,7 +13,7 @@ class Main extends React.Component {
             <div className='mainContainer'>
                 <header>
                     <div className="artistBlock">
-                        <img className="artistImg" src="/img/artistImgBrown.png"/>
+                        <Link to="/About"><img className="artistImg" src="/img/artistImg.png"/></Link>
                         <h1> KEVIN GRIMM </h1>
                         <br/>
                         <h3> Environmental concept artist and character designer </h3>
