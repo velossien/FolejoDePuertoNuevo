@@ -162,6 +162,10 @@ header {
     clear: left;
 }
 
+.container_a31snl {
+	background-color: rgba(0,0,0,1) !important;
+}
+
 .About {
 	color: $primary-text-color;
 	line-height: 2em;
@@ -188,10 +192,14 @@ header {
 
 	p{
 		font-size: 0.95em;
-		text-align: center;
+		text-align: justify;
 		text-decoration: none;
 		padding-bottom: 10px;
 	}	
+
+	p .email {
+		text-align: center;
+	}
 
 	ul{
 		text-align: center;

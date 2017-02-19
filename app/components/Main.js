@@ -13,12 +13,12 @@ class Main extends React.Component {
             <div className='mainContainer'>
                 <header>
                     <div className="artistBlock">
-                        <img className="artistImg" src="dist/img/artistImgBrown.png"/>
+                        <img className="artistImg" src="/img/artistImgBrown.png"/>
                         <h1> KEVIN GRIMM </h1>
                         <br/>
                         <h3> Environmental concept artist and character designer </h3>
                     </div>
-                        <img className="banner" src='dist/img/banner.jpg'/>
+                        <img className="banner" src='/img/banner.jpg'/>
                 </header>
                 <StickyContainer>
                         <Sticky>   
