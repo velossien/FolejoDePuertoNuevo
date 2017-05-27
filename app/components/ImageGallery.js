@@ -22,6 +22,33 @@ export default class ImageGallery extends React.Component {
 }
 
 const images = [
+     { 
+        src: 'img/thumbnails/kevin-grimm-highway14.jpg',  
+        width: 300,
+        height: 300,
+        aspectRatio: 1.00,
+        lightboxImage:{
+            src: 'img/fullSize/kevin-grimm-highway14.jpg'
+        }
+    },
+     { 
+        src: 'img/thumbnails/kevin-grimm-keepout.jpg',  
+        width: 300,
+        height: 300,
+        aspectRatio: 1.00,
+        lightboxImage:{
+            src: 'img/fullSize/kevin-grimm-keepout.jpg'
+        }
+    },
+     { 
+        src: 'img/thumbnails/kevin-grimm-run.jpg',  
+        width: 300,
+        height: 300,
+        aspectRatio: 1.00,
+        lightboxImage:{
+            src: 'img/fullSize/kevin-grimm-run.jpg'
+        }
+    },
     { 
         src: 'img/thumbnails/kevin-grimm-aftermath.jpg',  
         width: 300,
