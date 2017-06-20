@@ -22,6 +22,15 @@ export default class ImageGallery extends React.Component {
 }
 
 const images = [
+    { 
+        src: 'img/thumbnails/kevin-grimm-western.jpg',  
+        width: 300,
+        height: 300,
+        aspectRatio: 1.00,
+        lightboxImage:{
+            src: 'img/fullSize/kevin-grimm-western.jpg'
+        }
+    },
      { 
         src: 'img/thumbnails/kevin-grimm-highway14.jpg',  
         width: 300,

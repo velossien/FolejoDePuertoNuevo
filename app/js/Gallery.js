@@ -109,12 +109,12 @@ var Gallery = (function (_React$Component) {
 				rowLimit = 2;
 			}
 
-			if (this.state.containerWidth >= 550) {
-				rowLimit = 3;
+			if (this.state.containerWidth >= 600) {
+				rowLimit = 4;
 			}
 
 			if (this.state.containerWidth >= 1000) {
-				rowLimit = 6;
+				rowLimit = 7;
 			}
 
 			var contWidth = this.state.containerWidth - rowLimit * 4; /* 4px for margin around each image*/
