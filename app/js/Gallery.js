@@ -103,11 +103,8 @@ var Gallery = (function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-			var rowLimit = 1,
+			var rowLimit = 2,
 				photoPreviewNodes = [];
-			if (this.state.containerWidth >= 480) {
-				rowLimit = 2;
-			}
 
 			if (this.state.containerWidth >= 600) {
 				rowLimit = 4;
@@ -219,7 +216,7 @@ Gallery.propTypes = {
 };
 Gallery.defaultProps = {
 	lightboxShowImageCount: false,
-	backdropClosesModal: true,
+	backdropClosesModal: false,
 	disableLightbox: false
 };
 // Gallery image style
