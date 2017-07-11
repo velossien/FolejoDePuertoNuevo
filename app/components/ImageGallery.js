@@ -158,15 +158,6 @@ const images = [
         }
     },
     { 
-        src: 'img/thumbnails/kevin-grimm-the-hunt.jpg',  
-        width: 300,
-        height: 300,
-        aspectRatio: 1.00,
-        lightboxImage:{
-            src: 'img/fullSize/kevin-grimm-the-hunt.jpg'
-        }
-    },
-    { 
         src: 'img/thumbnails/kevin-grimm-the-end-is-near.jpg',  
         width: 300,
         height: 300,
