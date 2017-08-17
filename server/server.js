@@ -11,7 +11,7 @@ let app = express();
 app.use(bodyParser.json()); //allows us to send JSON to our express app
 
 //POST - adds an image document to the database
-app.post("/image", async (req, res) => {
+app.post("/images", async (req, res) => {
 
     let orderID;
     if (req.body.orderNumber) {
@@ -26,7 +26,7 @@ app.post("/image", async (req, res) => {
         height: 300,
         aspectRatio: 1,
         lightboxImage: {
-            src: 'img/fullSize/kevin-grimm-western.jpg'
+            src: req.body.lightboxImage.src
         },
         orderNumber: orderID
     });
@@ -40,7 +40,7 @@ app.post("/image", async (req, res) => {
 });
 
 //GET - finds all image documents in the database and returns them
-app.get("/image", async (req, res) => {
+app.get("/images", async (req, res) => {
     try {
         let images = await Image.find();
         res.send({ images });
@@ -50,7 +50,7 @@ app.get("/image", async (req, res) => {
 });
 
 //GET by ID - finds and returns an image document that has a certain ID
-app.get("/image/:id", async (req, res) => {
+app.get("/images/:id", async (req, res) => {
     let id = req.params.id;
 
     if (!ObjectID.isValid(id)) {
@@ -71,7 +71,7 @@ app.get("/image/:id", async (req, res) => {
 
 
 //DELETE - deletes image document from collection based on its id
-app.delete("/image/:id", async (req, res) => {
+app.delete("/images/:id", async (req, res) => {
     let id = req.params.id;
 
     if (!ObjectID.isValid(id)) {
@@ -91,7 +91,7 @@ app.delete("/image/:id", async (req, res) => {
 });
 
 //PATCH  - allows user to update the src location of the full or thumbnail sized images and orderNumber for a sepcific image document based on id
-app.patch("/image/:id", async (req, res) => {
+app.patch("/images/:id", async (req, res) => {
     let id = req.params.id;
     let body = _.pick(req.body, ["src", "lightboxImage.src", "orderNumber"]);
 
@@ -115,3 +115,5 @@ app.patch("/image/:id", async (req, res) => {
 app.listen(3000, () => {
     console.log("Started on port 3000");
 });
+
+module.exports = {app};
