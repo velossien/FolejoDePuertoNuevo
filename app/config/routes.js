@@ -3,7 +3,7 @@ import { Router, Route, IndexRoute, hashHistory} from 'react-router';
 import Main from '../components/Main';
 import ImageGallery from '../components/ImageGallery';
 import About from '../components/About';
-import Gallery from '../js/Gallery';
+import Admin from '../components/Admin';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 var routes = ( 
@@ -13,6 +13,7 @@ var routes = (
                 <IndexRoute component={ImageGallery}/>
                     <Route path='/ImageGallery' component ={ImageGallery}/>
                     <Route path='/About' component ={About}/>
+                     <Route path='/Admin' component = {Admin}/> 
             </Route>
         </Router>
     </StickyContainer>

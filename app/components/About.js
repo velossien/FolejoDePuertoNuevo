@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Gallery from '../js/Gallery.js';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 class About extends React.Component {

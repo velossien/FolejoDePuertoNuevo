@@ -5,6 +5,7 @@ $primary-text-color: #fff;
 $link-color: #a1a1a1;
 $link-hover-color:#fff;
 $menubar-link-hover-color: #111;
+$button-press-color:#474747;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -223,6 +224,55 @@ header {
 		margin-bottom: 20px;
 		width: 30%;
 		border-bottom: 1px solid rgba(#fff,0.50)
+	}
+}
+
+.Admin {
+	color: $primary-text-color;
+	line-height: 2em;
+	letter-spacing: 0.5px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+	h1{		
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: center;
+		padding-bottom: 30px;
+		padding-top:30px;
+	}
+
+	p{
+		font-size: 0.95em;
+		text-align: center;
+		text-decoration: none;
+		padding-top: 10px;
+	}	
+
+	.center {
+		text-align: center;
+	}
+
+	input {
+		margin-bottom:20px;
+	}
+
+	button {
+		border: none;
+		background: $secondary-color;
+		color: white;
+		padding: 10px;
+		margin:auto; 
+		display:block;
+	}
+
+	button:hover{
+		border: none;
+		background:$button-press-color;
+		color: white;
+		padding:10px;
 	}
 }
 

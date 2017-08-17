@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { StickyContainer, Sticky } from 'react-sticky';
-import ImageGallery from '../components/ImageGallery';
 import { Router, Route, Link, IndexRoute, hashHistory} from 'react-router';
 
 class Main extends React.Component {
