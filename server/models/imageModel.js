@@ -9,15 +9,15 @@ let Image = mongoose.model("Image", {
     },
     width: {
         type: Number,
-        required: true
+        required: false
     },
     height: {
         type: Number,
-        required: true
+        required: false
     },
     aspectRatio: {
         type: Number,
-        required: true
+        required: false
     },
     lightboxImage: {
         src: {
