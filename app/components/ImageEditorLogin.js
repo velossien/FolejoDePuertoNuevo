@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { StickyContainer, Sticky } from 'react-sticky';
+import { Router, Route, Link, IndexRoute, hashHistory} from 'react-router';
 
-class Admin extends React.Component {
+class ImageEditorLogin extends React.Component {
     constructor(props) {
         super(props);
     };
@@ -12,11 +13,11 @@ class Admin extends React.Component {
                 <h1> Admin Page</h1>
 
                 <form className="center">
-                    <p>User Name</p>
-                    <input type="text" name="username" />
                     <p>Password</p>
                     <input type="text" name="password" />
-                    <button className="center"> Sign in</button>
+                    <Link to="/ImageEditorMain">
+                        <button className="center"> Sign in</button>
+                    </Link>
                 </form>
 
                 <div className="copyright">
@@ -27,4 +28,4 @@ class Admin extends React.Component {
     };
 };
 
-export default Admin;
+export default ImageEditorLogin;
