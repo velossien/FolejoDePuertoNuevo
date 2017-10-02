@@ -25,7 +25,7 @@ let UserSchema = new mongoose.Schema({
     }]
 });
 
-let salt = "SECRETSALT";
+let salt = process.env.JWT_SECRET;
 
 //makes it so we will not return the token, password, or "Admin" username to user
 UserSchema.methods.toJSON = function () {

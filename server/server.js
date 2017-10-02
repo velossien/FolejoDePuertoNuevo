@@ -1,3 +1,5 @@
+require("./config/config");
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const { ObjectID } = require("mongodb");
@@ -138,7 +140,6 @@ app.get("/users/me", authenticate, (req, res) => {
 });
 
 //POST /users/login - allows a user to login
-
 app.post("/users/login", async (req, res) => {
     try {
         const body = _.pick(req.body, ["password"]);
