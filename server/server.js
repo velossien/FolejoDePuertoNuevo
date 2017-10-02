@@ -142,8 +142,8 @@ app.get("/users/me", authenticate, (req, res) => {
 //POST /users/login - allows a user to login
 app.post("/users/login", async (req, res) => {
     try {
-        const body = _.pick(req.body, ["password"]);
-        const user = await User.findByCredentials("Admin", body.password); //not passing in a custom username as there will only be an Admin account for this website
+        const body = _.pick(req.body, ["username", "password"]);
+        const user = await User.findByCredentials(body.username, body.password);
         const token = await user.generateAuthToken();
         res.header("x-auth", token).send(user);
     } catch (err) {

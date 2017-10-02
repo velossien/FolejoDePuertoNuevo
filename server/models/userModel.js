@@ -6,7 +6,8 @@ const bcrypt = require("bcryptjs");
 let UserSchema = new mongoose.Schema({
     username: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     password: {
         type: String,
@@ -27,7 +28,7 @@ let UserSchema = new mongoose.Schema({
 
 let salt = process.env.JWT_SECRET;
 
-//makes it so we will not return the token, password, or "Admin" username to user
+//makes it so we will not return the token, password, or username to user
 UserSchema.methods.toJSON = function () {
     let userObject = this.toObject();
     return _.pick(userObject, ["_id"]);
