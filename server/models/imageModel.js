@@ -27,6 +27,10 @@ let Image = mongoose.model("Image", {
             trim: true
         }
     },
+    _creator:{
+        type: mongoose.Schema.Types.ObjectId, //sets it to an objectID
+        required: true
+    },
     orderNumber : { //will be for ordering photos later on
         type: Number,
         required: false

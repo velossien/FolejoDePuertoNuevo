@@ -36,6 +36,7 @@ app.post("/images", authenticate, async (req, res) => {
         lightboxImage: {
             src:req.body.lightboxImage.src
         },
+        _creator: req.user._id,
         orderNumber: 1
     });
 
@@ -50,12 +51,15 @@ app.post("/images", authenticate, async (req, res) => {
 //GET - finds all image documents in the database and returns them
 app.get("/images", authenticate, async (req, res) => {
     try {
-        let images = await Image.find();
+        let images = await Image.find({
+            _creator: req.user._id //only finds images that the user posted
+        });
         res.send({ images });
     } catch (err) {
         res.status(400).send(err);
     }
 });
+
 
 //GET by ID - finds and returns an image document that has a certain ID
 app.get("/images/:id", authenticate, async (req, res) => {
@@ -66,7 +70,10 @@ app.get("/images/:id", authenticate, async (req, res) => {
     }
 
     try {
-        let image = await Image.findById(id);
+        let image = await Image.findOne({
+            _id: id,
+            _creator: req.user._id
+        });
 
         if (!image) {
             return res.status(404).send();
