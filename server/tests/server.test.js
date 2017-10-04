@@ -192,3 +192,90 @@ describe("DELETE /images:id", () => {
             });
     });
 });
+
+describe("PATCH /images/:id", () => {
+
+    let patchedID = images[0]._id.toHexString();
+
+    it("should update an image with new information", (done) => {
+
+        request(app)
+            .patch(`/images/${patchedID}`)
+            .set("x-auth", users[0].tokens[0].token)
+            .send({
+                src: "updatedSrc",
+                lightboxImage: {
+                    src: "updatedLightBoxSrc"
+                }
+            })
+            .expect(200)
+            .expect((res) => {
+                expect(res.body.image._id).toBe(patchedID)
+            })
+            .end((err, res) => {
+                if (err) {
+                    return done(err);
+                };
+                Image.findById(patchedID).then((image) => {
+                    expect(image.src).toBe("updatedSrc");
+                    expect(image.lightboxImage.src).toBe("updatedLightBoxSrc");
+                    done();
+                }).catch((error) => done(error));
+            })
+    });
+
+    it("should send back a 404 if image is not found", (done) => {
+        let testId = new ObjectID().toHexString();
+
+        request(app)
+            .patch(`/images/${testId}`)
+            .set("x-auth", users[0].tokens[0].token)
+            .send({
+                src: "updatedSrc",
+                lightboxImage: {
+                    src: "updatedLightBoxSrc"
+                }
+            })
+            .expect(404)
+            .end(done);
+    });
+
+    it("should send back a 404 if id is invalid", (done) => {
+
+        request(app)
+            .patch("/images/123")
+            .set("x-auth", users[0].tokens[0].token)
+            .send({
+                src: "updatedSrc",
+                lightboxImage: {
+                    src: "updatedLightBoxSrc"
+                }
+            })
+            .expect(404)
+            .end(done);
+    });
+
+    it("should not update an image that belongs to another user", (done) => {
+
+        request(app)
+            .patch(`/images/${patchedID}`)
+            .set("x-auth", users[1].tokens[0].token)
+            .send({
+                src: "updatedSrc",
+                lightboxImage: {
+                    src: "updatedLightBoxSrc"
+                }
+            })
+            .expect(404)
+            .end((err, res) => {
+                if (err) {
+                    return done(err);
+                };
+                Image.findById(patchedID).then((image) => {
+                    expect(image.src).toNotBe("updatedSrc");
+                    expect(image.lightboxImage.src).toNotBe("updatedLightBoxSrc");
+                    done();
+                }).catch((error) => done(error));
+            })
+    });
+});
