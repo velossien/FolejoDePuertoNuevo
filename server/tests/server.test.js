@@ -39,6 +39,7 @@ describe("***IMAGES***", () => {
                         expect(images.length).toBe(1);
                         expect(images[0].src).toBe(src);
                         expect(images[0].lightboxImage.src).toBe(lightboxImageSrc);
+                        expect(images[0]._creator.toHexString()).toBe(users[0]._id.toHexString()); //make sure creator is user1
                         done();
                     }).catch((error) => done(error));
                 });
@@ -56,6 +57,29 @@ describe("***IMAGES***", () => {
                     }
                 })
                 .expect(400)
+                .end((err, res) => {
+                    if (err) {
+                        return done(err);
+                    }
+                    Image.find().then((images) => {
+                        expect(images.length).toBe(2);
+                        done();
+                    }).catch((error) => done(error));
+                });
+        });
+
+        it("should not create a image with no creator (not authenticated)", (done) => {
+
+            request(app)
+                .post("/images")
+                .set("x-auth", "")
+                .send({
+                    src: "",
+                    lightboxImage: {
+                        src: ""
+                    }
+                })
+                .expect(401)
                 .end((err, res) => {
                     if (err) {
                         return done(err);
@@ -277,7 +301,7 @@ describe("***IMAGES***", () => {
                         expect(image.lightboxImage.src).toNotBe("updatedLightBoxSrc");
                         done();
                     }).catch((error) => done(error));
-                })
+                });
         });
     });
 });
@@ -295,7 +319,7 @@ describe("***USERS***", () => {
                 .send({ username, password })
                 .expect(200)
                 .expect((res) => {
-                    expect(res.headers["x-auth"]).toExist();
+                    expect(res.headers["x-auth"]).toExist(); //if it exists, it means the user is now logged in (has an auth token)
                     expect(res.body._id).toExist();
                 })
                 .end((err, res) => {
@@ -347,7 +371,7 @@ describe("***USERS***", () => {
                 .send({ username, password })
                 .expect(200)
                 .expect((res) => {
-                    expect(res.headers["x-auth"]).toExist(); //returns newest login x-auth token header
+                    expect(res.headers["x-auth"]).toExist(); //expect a new auth token (x-auth token)
                 })
                 .end((err, res) => {
                     if (err) {
@@ -355,9 +379,9 @@ describe("***USERS***", () => {
                     }
 
                     User.findById(users[0]._id).then((user) => {
-                        expect(user.tokens[1]).toInclude({ 
+                        expect(user.tokens[1]).toInclude({
                             access: "auth",
-                            token: res.headers["x-auth"] //token matches the x-auth header received back
+                            token: res.headers["x-auth"] //new token matches the x-auth header received back
                         });
                         done();
                     }).catch((error) => done(error));
@@ -373,7 +397,7 @@ describe("***USERS***", () => {
                 .send({ username, invalidPassword })
                 .expect(400)
                 .expect((res) => {
-                    expect(res.headers["x-auth"]).toNotExist(); //do not get an authenitcated header returned to us
+                    expect(res.headers["x-auth"]).toNotExist(); //do not get an authenticated header returned to us
                 })
                 .end((err, res) => {
                     if (err) {
@@ -384,6 +408,65 @@ describe("***USERS***", () => {
                         expect(user.tokens.length).toBe(1); //user was not logged in and no new token was made
                         done();
                     }).catch((e) => done(e));
+                });
+        });
+    });
+
+    describe("GET /users/me", () => {
+        it("should return user if authenticated", (done) => {
+            request(app)
+                .get("/users/me")
+                .set("x-auth", users[0].tokens[0].token)
+                .expect(200)
+                .expect((res) => {
+                    expect(res.body._id).toBe(users[0]._id.toHexString());
+                })
+                .end(done)
+        });
+
+        it("should return 401 if not authenticated", (done) => {
+            request(app)
+                .get('/users/me')
+                .expect(401)
+                .expect((res) => {
+                    expect(res.body).toEqual({});
+                })
+                .end(done);
+        });
+    });
+
+    describe("DELETE /users/me/token", () => {
+        it("should remove auth token on logout", (done) => {
+            request(app)
+                .delete("/users/me/token")
+                .set("x-auth", users[0].tokens[0].token) //logged in with this token - this token will be removed when logging out
+                .expect(200)
+                .end((err, res) => {
+                    if (err) {
+                        return done(err);
+                    }
+
+                    User.findById(users[0]._id).then((user) => {
+                        expect(user.tokens.length).toBe(0); //only token user had was deleted - so no token left
+                        done();
+                    }).catch((error) => done(error));
+                })
+        });
+
+        it("should not remove auth token if not valid", (done) => {
+            request(app)
+                .delete("/users/me/token")
+                .set("x-auth", "")
+                .expect(401)
+                .end((err, res) => {
+                    if (err) {
+                        return done(err);
+                    }
+
+                    User.findById(users[0]._id).then((user) => {
+                        expect(user.tokens.length).toBe(1); //no token removed
+                        done();
+                    }).catch((err) => done(err));
                 });
         });
     });

@@ -147,11 +147,6 @@ app.post("/users", async (req, res) => {
     }
 });
 
-//GET "/users/me" - requires authentication then finds user and returns them
-app.get("/users/me", authenticate, (req, res) => {
-    res.send(req.user);
-});
-
 //POST /users/login - allows a user to login
 app.post("/users/login", async (req, res) => {
     try {
@@ -163,6 +158,13 @@ app.post("/users/login", async (req, res) => {
         res.status(400).send();
     };
 });
+
+//GET "/users/me" - requires authentication, then finds user and returns them
+app.get("/users/me", authenticate, (req, res) => {
+    res.send(req.user);
+});
+
+
 
 //DELETE /users/me/token - logs a user out (deletes token)
 app.delete("/users/me/token", authenticate, async (req, res) => {
