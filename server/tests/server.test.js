@@ -119,14 +119,76 @@ describe("GET /images/:id", () => {
     });
 
     it("should return 404 if image not found", (done) => {
-        
-                let testID = new ObjectID();
-        
-                request(app)
-                    .get(`/images/${testID.toHexString()}`)
-                    .set("x-auth", users[0].tokens[0].token)
-                    .expect(404)
-                    .end(done);
-            });
+
+        let testID = new ObjectID();
+
+        request(app)
+            .get(`/images/${testID.toHexString()}`)
+            .set("x-auth", users[0].tokens[0].token)
+            .expect(404)
+            .end(done);
+    });
 });
 
+describe("DELETE /images:id", () => {
+
+    let deletedID = images[0]._id.toHexString();
+
+    it("should delete an image based off of an id", (done) => {
+        request(app)
+            .delete(`/images/${deletedID}`)
+            .set("x-auth", users[0].tokens[0].token)
+            .expect(200)
+            .expect((res) => {
+                expect(res.body.image._id).toBe(deletedID);
+            })
+            .end((err, res) => {
+                if (err) {
+                    return done(err);
+                }
+                Image.findById(deletedID).then((image) => {
+                    expect(image).toNotExist;
+                }).catch((error) => done(error));
+
+                Image.find().then((imageList) => {
+                    expect(imageList.length).toBe(1);
+                    done();
+                }).catch((error) => done(error));
+            });
+    });
+
+    it("should give a 404 if there is no matching image", (done) => {
+        let testID = new ObjectID();
+
+        request(app)
+            .delete(`/images/${testID.toHexString()}`)
+            .set("x-auth", users[0].tokens[0].token)
+            .expect(404)
+            .end(done);
+    });
+
+    it("should give a 404 error if id is not valid", (done) => {
+        request(app)
+            .delete(`/images/123`)
+            .set("x-auth", users[0].tokens[0].token)
+            .expect(404)
+            .end(done);
+    });
+
+    it("should not delete an image by another user", (done) => {
+        request(app)
+            .delete(`/images/${deletedID}`)
+            .set("x-auth", users[1].tokens[0].token)
+            .expect(404)
+            .end((err, res) => {
+                if (err) {
+                    return done(err);
+                }
+
+                Image.findById(deletedID).then((image) => {
+                    expect(image).toExist;
+                    done();
+                }).catch((error) => done(error));
+            });
+    });
+});

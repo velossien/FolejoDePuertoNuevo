@@ -94,7 +94,10 @@ app.delete("/images/:id", authenticate, async (req, res) => {
     }
 
     try {
-        let image = await Image.findByIdAndRemove(id);
+        let image = await Image.findOneAndRemove({
+            _id: id,
+            _creator: req.user._id
+        });
 
         if (!image) {
             return res.status(404).send();
@@ -115,7 +118,10 @@ app.patch("/images/:id", authenticate, async (req, res) => {
     }
 
     try {
-        let image = await Image.findByIdAndUpdate(id, { $set: body }, { new: true });
+        let image = await Image.findOneAndUpdate({
+            _id: id,
+            _creator: req.user._id
+        },{ $set: body }, { new: true });
         if (!image) {
             return res.status(404).send();
         }
