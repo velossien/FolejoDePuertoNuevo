@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const { ObjectID } = require("mongodb");
 const _ = require("lodash");
 const bcrypt = require("bcryptjs");
+const path = require('path');
 
 
 let { mongoose } = require("./db/mongoose");
@@ -13,6 +14,14 @@ let { User } = require("./models/userModel");
 let { authenticate } = require("./middleware/authenticate");
 
 let app = express();
+
+let DIST_DIR = path.join(__dirname, "..", "/dist");
+
+app.use(express.static(DIST_DIR));
+
+app.get("*", ((req,res)=>{
+    res.sendFile(path.join(DIST_DIR, "index.html"));
+}));
 
 app.use(bodyParser.json()); //allows us to send JSON to our express app
 
