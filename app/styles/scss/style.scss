@@ -70,12 +70,13 @@ table {
 /*-----------Header/Banner-----------*/
 
 header {
-	margin-left: 2px;
-	margin-right: 3px;
 	position: relative;
+	margin-left: 1px;
+	margin-right: 2px;
 	.banner {
 		max-width: 100%;
 		position: relative;
+		
 	}
 	.artistBlock {
 		position: absolute;
@@ -112,8 +113,8 @@ header {
 .menubar {
 	text-align: center;
 	background-color: $secondary-color;
-	margin-left: 2px;
-	margin-right: 3px;
+	margin-left: 1px;
+	margin-right: 2px;
 	
 	ul {
 		background-color: $secondary-color;
@@ -143,6 +144,17 @@ header {
 
 .gallery {
 	width: 100%;
+	margin: auto;
+	text-align: center;
+
+	.imageList {
+
+		.image{
+			width: calc(16.66666666% - 4px);
+			padding:2px;
+			display: inline-block
+		}
+	}
 }
 
 .clearfix:after {
@@ -294,6 +306,21 @@ header {
 	}
 }
 
+@media screen and (max-width: 1000px){
+	.mainContainer {
+		width: 100%;	
+	}
+
+	.gallery {
+		.imageList {
+			.image{
+				width: calc(25% - 4px);
+				padding:2px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 800px){
 	.artistBlock {
 		height: 40px;
@@ -306,5 +333,20 @@ header {
 	.About {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.mainContainer {
+		width: 100%;	
+	}
+
+	.gallery {
+		.imageList {
+			.image{
+				width: calc(50% - 4px);
+				padding:2px;
+			}
+		}
 	}
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Main from '../components/Main';
-import ImageGallery from '../components/ImageGallery';
+import Gallery from '../components/Gallery';
 import About from '../components/About';
 import ImageEditorLogin from '../components/ImageEditorLogin';
 import ImageEditorMain from '../components/ImageEditorMain';
@@ -11,8 +11,8 @@ var routes = (
     <StickyContainer>
         <Router history={hashHistory}>
             <Route path='/' component={Main}>
-                <IndexRoute component={ImageGallery} />
-                <Route path='/ImageGallery' component={ImageGallery} />
+                <IndexRoute component={Gallery} />
+                <Route path='/Gallery' component={Gallery} />
                 <Route path='/About' component={About} />
                 <Route path='/ImageEditorLogin' component={ImageEditorLogin} />
                 <Route path='/ImageEditorMain' component = {ImageEditorMain}/>
