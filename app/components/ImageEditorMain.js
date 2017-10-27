@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { StickyContainer, Sticky } from 'react-sticky';
 import { Router, Route, Link, IndexRoute, hashHistory} from 'react-router';
 
 class ImageEditorMain extends React.Component {
