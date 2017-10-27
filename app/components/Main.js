@@ -23,7 +23,7 @@ class Main extends React.Component {
                         <Sticky>   
                             <div className="menubar">
                                 <ul>
-                                    <li><Link to="/ImageGallery">Portfolio</Link></li>
+                                    <li><Link to="/Gallery">Portfolio</Link></li>
                                     <li><Link to="/About">About</Link></li>
                                 </ul>
                             </div> 
