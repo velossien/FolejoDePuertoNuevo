@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import images from "../js/Images.js";
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 
 export default class Gallery extends React.Component {
@@ -22,7 +23,7 @@ class GalleryList extends React.Component {
     render() {
         let imageList = this.props.images.map(((obj) => {
             return (
-                <Image thumbnailSrc={obj.thumbnailSrc} key={obj.thumbnailSrc} fullSizeSrc={obj.fullSizeSrc} />
+                <Image thumbnailSrc={obj.thumbnailSrc} title={obj.title} key={obj.thumbnailSrc} fullSizeSrc={obj.fullSizeSrc} />
             );
         }));
         return (
@@ -36,7 +37,7 @@ class GalleryList extends React.Component {
 class Image extends React.Component {
     render() {
         return (
-            <a href={this.props.fullSizeSrc}><img className="image" src={this.props.thumbnailSrc} /></a>
+            <Link to ={"/Gallery/"+this.props.title}><img className="image" src={this.props.thumbnailSrc} /></Link>
         );
     };
 };

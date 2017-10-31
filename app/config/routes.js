@@ -1,23 +1,14 @@
 import React, { Component } from 'react';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Route, HashRouter } from 'react-router-dom';
+import images from "../js/Images.js";
 import Main from '../components/Main';
-import Gallery from '../components/Gallery';
-import About from '../components/About';
-import ImageEditorLogin from '../components/ImageEditorLogin';
-import ImageEditorMain from '../components/ImageEditorMain';
 import { StickyContainer, Sticky } from 'react-sticky';
 
-var routes = (
+let routes = (
     <StickyContainer>
-        <Router history={hashHistory}>
-            <Route path='/' component={Main}>
-                <IndexRoute component={Gallery} />
-                <Route path='/Gallery' component={Gallery} />
-                <Route path='/About' component={About} />
-                <Route path='/ImageEditorLogin' component={ImageEditorLogin} />
-                <Route path='/ImageEditorMain' component = {ImageEditorMain}/>
-            </Route>
-        </Router>
+        <HashRouter>
+            <Route path='/' component={Main}/>
+        </HashRouter>
     </StickyContainer>
 );
 

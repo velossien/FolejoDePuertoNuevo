@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Router, Route, Link, IndexRoute, hashHistory} from 'react-router';
+import { Router, Route, Link, IndexRoute, hashHistory} from 'react-router-dom';
 
-class ImageEditorMain extends React.Component {
+export default class ImageEditorMain extends React.Component {
     constructor(props) {
         super(props);
     };
@@ -26,5 +26,3 @@ class ImageEditorMain extends React.Component {
         );
     };
 };
-
-export default ImageEditorMain;
