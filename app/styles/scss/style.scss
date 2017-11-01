@@ -167,7 +167,32 @@ header {
 		position: relative;
 		overflow: hidden;
 	}
+
+	button {
+		background-color: $primary-color;
+		color:$primary-text-color;
+		padding: 2px;
+		margin: 2px;
+		border: 0;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		font-size: 14px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+		cursor: pointer;
+	}
+		
+	button:hover {
+		background-color: #fff;
+		color: black;
+	}
+
+	.back-button{
+		float:right;
+	}
 }
+
 
 .clearfix:after {
      visibility: hidden;
