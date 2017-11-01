@@ -7,12 +7,6 @@ import { Link } from 'react-router-dom';
 export default class Gallery extends React.Component {
     constructor(props) {
         super(props);
-
-        this.closeHeader = this.closeHeader.bind(this);
-    }
-
-    closeHeader() {
-        this.props.onImageClick();
     }
 
     componentDidMount() {
@@ -22,7 +16,7 @@ export default class Gallery extends React.Component {
     render() {
         return (
             <div>
-                <div className="gallery" onChange={this.componentDidMount}>
+                <div className="gallery">
                     <GalleryList
                         images={images}
                         onImageClick={this.closeHeader}
@@ -40,12 +34,6 @@ export default class Gallery extends React.Component {
 class GalleryList extends React.Component {
     constructor(props) {
         super(props);
-
-        this.closeHeader = this.closeHeader.bind(this);
-    }
-
-    closeHeader() {
-        this.props.onImageClick();
     }
 
     render() {
@@ -56,8 +44,6 @@ class GalleryList extends React.Component {
                     thumbnailSrc={obj.thumbnailSrc}
                     fullSizeSrc={obj.fullSizeSrc}
                     key={obj.thumbnailSrc}
-                    showHeader={this.props.showHeader}
-                    onImageClick={this.closeHeader}
                 />
             );
         }));
@@ -72,17 +58,11 @@ class GalleryList extends React.Component {
 class Image extends React.Component {
     constructor(props) {
         super(props);
-
-        this.closeHeader = this.closeHeader.bind(this);
-    }
-
-    closeHeader() {
-        this.props.onImageClick();
     }
 
     render() {
         return (
-            <Link to={"/Gallery/" + this.props.title} onClick={this.closeHeader}><img className="image" src={this.props.thumbnailSrc} /></Link>
+            <Link to={"/Gallery/" + this.props.title}><img className="image" src={this.props.thumbnailSrc} /></Link>
         );
     };
 };
@@ -90,6 +70,5 @@ class Image extends React.Component {
 Image.propTypes = {
     thumbnailSrc: PropTypes.string.isRequired,
     fullSizeSrc: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    closeHeader: PropTypes.func.isRequired
+    title: PropTypes.string.isRequired
 };

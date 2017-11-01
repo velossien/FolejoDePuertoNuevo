@@ -46,10 +46,10 @@ export default class Main extends React.Component {
                     {menubar}
                     <Switch>
                         <Route exact path='/' render={(props) => (
-                            <Gallery {...props} showHeader={this.state.showHeader} onImageClick={this.closeHeader} onOpenGallery={this.openHeader} />
+                            <Gallery {...props} onOpenGallery={this.openHeader} />
                         )} />
                         <Route exact path='/Gallery' render={(props) => (
-                            <Gallery {...props} showHeader={this.state.showHeader} onImageClick={this.closeHeader} onOpenGallery={this.openHeader} />
+                            <Gallery {...props} onOpenGallery={this.openHeader} />
                         )} />
                         <Route exact path='/Gallery/:fullSizeSrc' render={(props) => (
                             <ImageView {...props} showHeader={this.state.showHeader} onOpenImageView={this.closeHeader} />
