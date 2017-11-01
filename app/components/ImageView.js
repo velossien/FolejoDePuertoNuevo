@@ -5,9 +5,19 @@ export default class ImageView extends React.Component {
     constructor(props) {
         super(props);
         this.goBackGallery = this.goBackGallery.bind(this);
+        this.previousImage = this.previousImage.bind(this);
+        this.nextImage = this.nextImage.bind(this);
     }
 
     goBackGallery() {
+        this.props.history.push('/Gallery');
+    }
+
+    previousImage() {
+        this.props.history.push('/Gallery');
+    }
+
+    nextImage() {
         this.props.history.push('/Gallery');
     }
 
@@ -21,7 +31,11 @@ export default class ImageView extends React.Component {
         return (
             <div className="image-view">
                 <button className="back-button" onClick={this.goBackGallery}>X</button>
-                <img src={`https://s3.amazonaws.com/kevingrimm.com/img/fullSize/${imgSrc}`} />
+                <div className="image-block">
+                    <button className="prev-button" onClick={this.previousImage}>&#8592;</button>
+                    <img src={`https://s3.amazonaws.com/kevingrimm.com/img/fullSize/${imgSrc}`} />
+                    <button className="next-button" onClick={this.nextImage}>&#8594;</button>
+                </div>
             </div>
         );
     }

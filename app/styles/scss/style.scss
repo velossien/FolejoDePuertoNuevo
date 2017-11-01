@@ -157,14 +157,16 @@ header {
 }
 
 .image-view{
-	position: relative;
+	position: flex;
 	margin-left: 1px;
 	margin-right: 2px;
 	padding-top: 10px;
+	align-items: center;
+	justify-content: center;
 
 	img{
 		max-width: 100%;
-		width: 100%;
+		width: 90%;
 		position: relative;
 		overflow: hidden;
 	}
@@ -190,8 +192,25 @@ header {
 	}
 
 	.back-button{
+		align-self: flex-start;
 		float:right;
-		padding-bottom: 5px;
+	}
+
+	.image-block{
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+		
+		.prev-button{
+			margin-right:3px;
+			font-size:1.5em;
+		}
+	
+		.next-button{
+			margin-left:3px;
+			font-size:1.5em;
+		}
 	}
 }
 
