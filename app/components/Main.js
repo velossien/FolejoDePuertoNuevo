@@ -17,11 +17,16 @@ export default class Main extends React.Component {
             showHeader: true
         };
 
-        this.changeHeaderVisibility = this.changeHeaderVisibility.bind(this);
+        this.closeHeader = this.closeHeader.bind(this);
+        this.openHeader = this.openHeader.bind(this);
     }
 
-    changeHeaderVisibility() {
+    closeHeader() {
         this.setState({ showHeader: false });
+    };
+
+    openHeader() {
+        this.setState({ showHeader: true });
     };
 
     render() {
@@ -41,15 +46,17 @@ export default class Main extends React.Component {
                     {menubar}
                     <Switch>
                         <Route exact path='/' render={(props) => (
-                            <Gallery {...props} showHeader={this.state.showHeader} onImageClick={this.changeHeaderVisibility} />
+                            <Gallery {...props} showHeader={this.state.showHeader} onImageClick={this.closeHeader} onOpenGallery={this.openHeader} />
                         )} />
                         <Route exact path='/Gallery' render={(props) => (
-                            <Gallery {...props} showHeader={this.state.showHeader} onImageClick={this.changeHeaderVisibility} />
+                            <Gallery {...props} showHeader={this.state.showHeader} onImageClick={this.closeHeader} onOpenGallery={this.openHeader} />
                         )} />
-                        <Route path='/Gallery/:fullSizeSrc' component={ImageView} />
-                        <Route exact path='/About' component={About} />
-                        <Route exact path='/ImageEditorLogin' component={ImageEditorLogin} />
-                        <Route exact path='/ImageEditorMain' component={ImageEditorMain} />
+                        <Route exact path='/Gallery/:fullSizeSrc' render={(props) => (
+                            <ImageView {...props} showHeader={this.state.showHeader} onOpenImageView={this.closeHeader} />
+                        )} />
+                        <Route exact path='/About' render={(props) => (
+                            <About {...props} showHeader={this.state.showHeader} onOpenAbout={this.openHeader} />
+                        )} />
                     </Switch>
                 </StickyContainer>
             </div>

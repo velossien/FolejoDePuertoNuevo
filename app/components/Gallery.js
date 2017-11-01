@@ -8,21 +8,24 @@ export default class Gallery extends React.Component {
     constructor(props) {
         super(props);
 
-        this.changeHeaderVisibility = this.changeHeaderVisibility.bind(this);
+        this.closeHeader = this.closeHeader.bind(this);
     }
 
-    changeHeaderVisibility() {
-        console.log("CLICK3");
+    closeHeader() {
         this.props.onImageClick();
     }
+
+    componentDidMount() {
+        this.props.onOpenGallery();
+    };
 
     render() {
         return (
             <div>
-                <div className="gallery">
+                <div className="gallery" onChange={this.componentDidMount}>
                     <GalleryList
                         images={images}
-                        onImageClick={this.changeHeaderVisibility}
+                        onImageClick={this.closeHeader}
                         showHeader={this.props.showHeader}
                     />
                 </div>
@@ -38,11 +41,10 @@ class GalleryList extends React.Component {
     constructor(props) {
         super(props);
 
-        this.changeHeaderVisibility = this.changeHeaderVisibility.bind(this);
+        this.closeHeader = this.closeHeader.bind(this);
     }
 
-    changeHeaderVisibility() {
-        console.log("CLICK2");
+    closeHeader() {
         this.props.onImageClick();
     }
 
@@ -55,7 +57,7 @@ class GalleryList extends React.Component {
                     fullSizeSrc={obj.fullSizeSrc}
                     key={obj.thumbnailSrc}
                     showHeader={this.props.showHeader}
-                    onImageClick={this.changeHeaderVisibility}
+                    onImageClick={this.closeHeader}
                 />
             );
         }));
@@ -71,22 +73,23 @@ class Image extends React.Component {
     constructor(props) {
         super(props);
 
-        this.changeHeaderVisibility = this.changeHeaderVisibility.bind(this);
+        this.closeHeader = this.closeHeader.bind(this);
     }
 
-    changeHeaderVisibility() {
-        console.log("CLICK");
+    closeHeader() {
         this.props.onImageClick();
     }
 
     render() {
         return (
-            <Link to={"/Gallery/" + this.props.title} onClick={this.changeHeaderVisibility}><img className="image" src={this.props.thumbnailSrc} /></Link>
+            <Link to={"/Gallery/" + this.props.title} onClick={this.closeHeader}><img className="image" src={this.props.thumbnailSrc} /></Link>
         );
     };
 };
 
 Image.propTypes = {
     thumbnailSrc: PropTypes.string.isRequired,
-    fullSizeSrc: PropTypes.string.isRequired
+    fullSizeSrc: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    closeHeader: PropTypes.func.isRequired
 };

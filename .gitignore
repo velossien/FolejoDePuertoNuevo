@@ -50,3 +50,11 @@ dist/img/
 app/img/
 
 .DS_Store
+
+index.bundle.js
+
+index.bundle.js.map
+
+dist/index_bundle\.js
+
+dist/index_bundle\.js\.map

@@ -68,6 +68,11 @@ table {
 }
 
 /*-----------Header/Banner-----------*/
+.mainContainer {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 header {
 	position: relative;
@@ -102,12 +107,6 @@ header {
 			font-weight: 400;		
 		}
 	}
-}
-
-.mainContainer {
-	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .menubar {
@@ -157,6 +156,19 @@ header {
 	}
 }
 
+.image-view{
+	position: relative;
+	margin-left: 1px;
+	margin-right: 2px;
+
+	img{
+		max-width: 100%;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+}
+
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -173,10 +185,6 @@ header {
 
 .clearLeft{
     clear: left;
-}
-
-.container_a31snl {
-	background-color: rgba(0,0,0,1) !important;
 }
 
 .About {
