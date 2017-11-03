@@ -13,14 +13,16 @@ export default class Gallery extends React.Component {
         this.props.onOpenGallery();
     };
 
+    nextImage(){
+
+    }
+
     render() {
         return (
             <div>
                 <div className="gallery">
                     <GalleryList
                         images={images}
-                        onImageClick={this.closeHeader}
-                        showHeader={this.props.showHeader}
                     />
                 </div>
                 <div className="copyright">
@@ -43,7 +45,8 @@ class GalleryList extends React.Component {
                     title={obj.title}
                     thumbnailSrc={obj.thumbnailSrc}
                     fullSizeSrc={obj.fullSizeSrc}
-                    key={obj.thumbnailSrc}
+                    key={obj.orderId}
+                    id={obj.orderId}
                 />
             );
         }));

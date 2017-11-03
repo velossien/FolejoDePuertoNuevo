@@ -180,7 +180,6 @@ header {
 		text-align: center;
 		text-decoration: none;
 		display: block;
-		font-size: 14px;
 		-webkit-transition-duration: 0.4s; /* Safari */
 		transition-duration: 0.4s;
 		cursor: pointer;
@@ -192,24 +191,30 @@ header {
 	}
 
 	.back-button{
+		font-size:2em;
 		align-self: flex-start;
 		float:right;
+		margin-right: 10px;
+		margin-top:-10px;
+
 	}
 
 	.image-block{
 		display: flex;
 		flex-wrap: nowrap;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 		
 		.prev-button{
-			margin-right:3px;
-			font-size:1.5em;
+			margin-right:10px;
+			margin-top:-10px;
+			font-size:2em;
 		}
 	
 		.next-button{
-			margin-left:3px;
-			font-size:1.5em;
+			margin-left:10px;
+			margin-top:-10px;
+			font-size:2em;
 		}
 	}
 }
