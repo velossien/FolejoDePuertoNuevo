@@ -205,15 +205,37 @@ header {
 			margin:auto;
 			align-items: center;
 			justify-content: space-between;
-			margin-top:5px;
+			margin-top: 5px;
 			
 			.prev-button{
-				font-size:1.4em;
+				font-size:1.2em;
+				background: $primary-color url(https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_left_icon.png);
+				background-size: 20%;
+				background-position: 8px 8px;
+				background-repeat: no-repeat;
+				padding: 8px 8px 8px 40px;
 			}
-		
+
+			.prev-button:hover{
+					background-color: #474747;
+					color: white;
+			}
+
 			.next-button{
-				font-size:1.4em;
+				font-size:1.2em;
+				background: $primary-color url(https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_right_icon.png);
+				background-size: 25%;
+				background-position: 73px 8px;
+				background-repeat: no-repeat;
+				padding: 8px 50px 8px 20px;
 			}
+
+			.next-button:hover{
+				background-color: #474747;
+				color: white;
+		}
+
+
 		}
 	}
 	
