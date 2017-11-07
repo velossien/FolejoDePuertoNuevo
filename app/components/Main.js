@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StickyContainer, Sticky } from 'react-sticky';
-import { Route, Link, Switch } from 'react-router-dom';
+import { Route, Link, Switch, Redirect } from 'react-router-dom';
 import Banner from '../components/Banner';
 import Menubar from '../components/Menubar';
 import Gallery from '../components/Gallery';
@@ -46,8 +46,9 @@ export default class Main extends React.Component {
                     {menubar}
                     <Switch>
                         <Route exact path='/' render={(props) => (
-                            <Gallery {...props} onOpenGallery={this.openHeader} />
+                            <Redirect to="/Gallery"/>
                         )} />
+
                         <Route exact path='/Gallery' render={(props) => (
                             <Gallery {...props} onOpenGallery={this.openHeader} />
                         )} />

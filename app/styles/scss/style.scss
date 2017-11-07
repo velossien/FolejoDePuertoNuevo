@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+	line-height: 0;
 	background-color: $primary-color;
 	overflow-y:scroll;
 }
@@ -72,13 +72,14 @@ table {
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	min-width: 250px;
+	min-width: 350px;
 }
 
 header {
 	position: relative;
-	margin-left: 1px;
+	margin-left: 2px;
 	margin-right: 2px;
+
 	.banner {
 		max-width: 100%;
 		position: relative;
@@ -95,17 +96,20 @@ header {
 			position: relative;
 			width: 100px;
 			left: 50%;
-			margin-left: -50px;	
+			margin-left: -50px;
+			padding-bottom: 10px;	
 		}
 		h1{		
 				font-size: 2em;
 				font-weight: bold;
 				text-align: center;
+				line-height: 2em;
 		}
 		h3{
 			font-size: 1em;
 			text-align: center;
-			font-weight: 400;		
+			font-weight: 400;	
+			line-height: 2em;	
 		}
 	}
 }
@@ -113,7 +117,7 @@ header {
 .menubar {
 	text-align: center;
 	background-color: $secondary-color;
-	margin-left: 1px;
+	margin-left: 2px;
 	margin-right: 2px;
 	
 	ul {
@@ -122,7 +126,7 @@ header {
 		position: relative;
 		display:inline-block;		
 		font-size: 1em;
-		line-height: 20px;
+		line-height: 2em;
   		vertical-align: middle;
 				
 		li {
@@ -138,6 +142,9 @@ header {
 			a:hover {
 				background-color: $primary-color;
 			}
+			.active{
+				background-color: $primary-color;
+			}
 		}
 	}
 }
@@ -146,13 +153,15 @@ header {
 	width: 100%;
 	margin: auto;
 	text-align: center;
-	padding-top:4px;
+	padding-top:2px;
 
 	.imageList {
+		margin-left:1px;
+		margin-right:1px;
 
 		.image{
 			width: calc(16.66666666% - 4px);
-			padding:1px 2px 1px 2px;
+			padding:2px;
 			display: inline-block
 		}
 	}
@@ -181,9 +190,9 @@ header {
 	}
 
 	.back-button{
-		font-size:1.6em;
+		font-size:1.4em;
 		float:right;
-		margin-right:5px;
+		margin-right:3px;
 		margin-bottom: 5px;
 		padding: 1px 3px 1px 3px;
 	}
@@ -235,12 +244,9 @@ header {
 			.next-button:hover{
 				background-color: #474747;
 				color: white;
-		}
-
-
+			}
 		}
 	}
-	
 }
 
 
@@ -405,15 +411,18 @@ header {
 
 @media screen and (max-width: 800px){
 	.artistBlock {
-		height: 88px;
+		height: 93px;
 		display:block;
 		padding-top:10px;
 		position: relative !important;}
 	.artistImg {display:none;}
 	.banner {display:none;}
+	h1{
+		line-height: 1.5em !important;
+	}
 	h3 {
 		font-size: 0.9em !important;
-		line-height: 1.3em;
+		line-height: 1.2em;
 	}	
 	.About {
 		padding-left: 5%;
@@ -430,7 +439,6 @@ header {
 		.imageList {
 			.image{
 				width: calc(50% - 4px);
-				padding:2px;
 			}
 		}
 	}

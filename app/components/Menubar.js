@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 import Gallery from '../components/Gallery';
@@ -15,8 +15,8 @@ export default class Menubar extends React.Component {
             <Sticky>
                 <div className="menubar">
                     <ul>
-                        <li><Link to="/Gallery">Portfolio</Link></li>
-                        <li><Link to="/About">About</Link></li>
+                        <li><NavLink activeClassName='active' to="/Gallery">Gallery</NavLink></li>
+                        <li><NavLink activeClassName='active' to="/About">About</NavLink></li>
                     </ul>
                 </div>
             </Sticky>
