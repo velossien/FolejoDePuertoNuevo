@@ -68,8 +68,8 @@ export default class ImageView extends React.Component {
                 <div className="img-block">
                     <img src={`https://s3.amazonaws.com/kevingrimm.com/img/fullSize/${currentImgSrc}`} />
                     <div className="button-block">
-                        <button className="prev-button" onClick={this.previousImage}>Previous</button>
-                        <button className="next-button" onClick={this.nextImage}>Next</button>
+                        <button className="prev-button" onClick={this.previousImage}>previous</button>
+                        <button className="next-button" onClick={this.nextImage}>next</button>
                     </div>
                 </div>
             </div>

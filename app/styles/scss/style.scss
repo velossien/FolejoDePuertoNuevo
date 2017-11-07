@@ -72,6 +72,7 @@ table {
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
+	min-width: 250px;
 }
 
 header {
@@ -145,12 +146,13 @@ header {
 	width: 100%;
 	margin: auto;
 	text-align: center;
+	padding-top:4px;
 
 	.imageList {
 
 		.image{
 			width: calc(16.66666666% - 4px);
-			padding:2px;
+			padding:1px 2px 1px 2px;
 			display: inline-block
 		}
 	}
@@ -208,12 +210,12 @@ header {
 			margin-top: 5px;
 			
 			.prev-button{
-				font-size:1.2em;
+				font-size:1.1em;
 				background: $primary-color url(https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_left_icon.png);
-				background-size: 20%;
+				background-size: 25px;
 				background-position: 8px 8px;
 				background-repeat: no-repeat;
-				padding: 8px 8px 8px 40px;
+				padding: 8px 8px 8px 50px;
 			}
 
 			.prev-button:hover{
@@ -222,9 +224,9 @@ header {
 			}
 
 			.next-button{
-				font-size:1.2em;
+				font-size:1.1em;
 				background: $primary-color url(https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_right_icon.png);
-				background-size: 25%;
+				background-size: 25px;
 				background-position: 73px 8px;
 				background-repeat: no-repeat;
 				padding: 8px 50px 8px 20px;
@@ -396,7 +398,6 @@ header {
 		.imageList {
 			.image{
 				width: calc(25% - 4px);
-				padding:2px;
 			}
 		}
 	}
@@ -404,13 +405,16 @@ header {
 
 @media screen and (max-width: 800px){
 	.artistBlock {
-		height: 40px;
+		height: 88px;
 		display:block;
-		padding-top:5px;
+		padding-top:10px;
 		position: relative !important;}
 	.artistImg {display:none;}
 	.banner {display:none;}
-	h3 {display:none;}	
+	h3 {
+		font-size: 0.9em !important;
+		line-height: 1.3em;
+	}	
 	.About {
 		padding-left: 5%;
 		padding-right: 5%;
