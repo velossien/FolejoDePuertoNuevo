@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StickyContainer, Sticky } from 'react-sticky';
-import { Route, Link, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Banner from '../components/Banner';
 import Menubar from '../components/Menubar';
 import Gallery from '../components/Gallery';

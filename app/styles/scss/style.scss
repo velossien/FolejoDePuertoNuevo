@@ -1,6 +1,6 @@
-$font-stack: 'Open Sans', sans-serif;
-$primary-color: #141414;
-$secondary-color: #2b2b2b;
+$font-stack: 'Raleway', sans-serif;
+$primary-color: #1b1b1b;
+$secondary-color: #353535;
 $primary-text-color: #fff;
 $link-color: #a1a1a1;
 $link-hover-color:#fff;
@@ -174,6 +174,7 @@ header {
 	button {
 		background-color: $primary-color;
 		color:$primary-text-color;
+		font-family: $font-stack;
 		padding: 2px;
 		border: 0;
 		text-align: center;
@@ -190,7 +191,7 @@ header {
 	}
 
 	.back-button{
-		font-size:1.4em;
+		font-size:1.3em;
 		float:right;
 		margin-right:3px;
 		margin-bottom: 5px;
@@ -219,12 +220,13 @@ header {
 			margin-top: 5px;
 			
 			.prev-button{
-				font-size:1.1em;
+				font-size:1.0em;
 				background: $primary-color url(https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_left_icon.png);
-				background-size: 25px;
-				background-position: 8px 8px;
+				background-size: 20px;
+				background-position: 8px 12px;
 				background-repeat: no-repeat;
-				padding: 8px 8px 8px 50px;
+				padding: 8px 8px 8px 40px;
+				margin-left: 50px;
 			}
 
 			.prev-button:hover{
@@ -233,12 +235,13 @@ header {
 			}
 
 			.next-button{
-				font-size:1.1em;
+				font-size:1.0em;
 				background: $primary-color url(https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_right_icon.png);
-				background-size: 25px;
-				background-position: 73px 8px;
+				background-size: 20px;
+				background-position: 65px 12px;
 				background-repeat: no-repeat;
 				padding: 8px 50px 8px 20px;
+				margin-right: 50px;
 			}
 
 			.next-button:hover{
@@ -275,13 +278,9 @@ header {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	
-	h1{		
-		font-size: 1.5em;
-		font-weight: bold;
-		text-align: center;
-		padding-bottom: 10px;
-		padding-top:50px;
+
+	.about-block{
+		padding-top: 1em;
 	}
 
 	h2{
@@ -321,7 +320,7 @@ header {
 	.line{
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-bottom: 20px;
 		width: 30%;
 		border-bottom: 1px solid rgba(#fff,0.50)
