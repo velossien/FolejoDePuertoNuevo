@@ -6,8 +6,6 @@ import Menubar from '../components/Menubar';
 import Gallery from '../components/Gallery';
 import About from '../components/About';
 import ImageView from '../components/ImageView';
-import ImageEditorLogin from '../components/ImageEditorLogin';
-import ImageEditorMain from '../components/ImageEditorMain';
 
 export default class Main extends React.Component {
     constructor(props) {

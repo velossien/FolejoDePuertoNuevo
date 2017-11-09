@@ -25,7 +25,7 @@ export default class About extends React.Component {
                 <p><a href="mailto:kevingrimmartist@gmail.com">kevingrimmartist@gmail.com</a></p>
                 <div className="line"></div>
                 <div className="copyright">
-                    <p>&copy; 2017 Grimm</p>
+                    &copy; 2017 Grimm
                 </div>
             </div>
         );
