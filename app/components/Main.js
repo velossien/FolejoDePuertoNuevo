@@ -46,7 +46,7 @@ export default class Main extends React.Component {
                     {menubar}
                     <Switch>
                         <Route exact path='/' render={(props) => (
-                            <Redirect to="/Gallery"/>
+                            <Redirect to="/Gallery" />
                         )} />
 
                         <Route exact path='/Gallery' render={(props) => (

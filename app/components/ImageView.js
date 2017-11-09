@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import images from "../js/Images.js";
 
 export default class ImageView extends React.Component {
@@ -64,12 +65,16 @@ export default class ImageView extends React.Component {
 
         return (
             <div className="image-view">
-                <button className="back-button" onClick={this.goBackGallery}>&#10005;</button>
+                <img onClick={this.goBackGallery} className="back-button" src="https://s3.amazonaws.com/kevingrimm.com/img/icons/close.png"/>
                 <div className="img-block">
+                    <img onClick={this.previousImage} className="arrow" src="https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_left_icon.png" />
                     <img src={`https://s3.amazonaws.com/kevingrimm.com/img/fullSize/${currentImgSrc}`} />
-                    <div className="button-block">
-                        <button className="prev-button" onClick={this.previousImage}>previous</button>
-                        <button className="next-button" onClick={this.nextImage}>next</button>
+                    <img className="arrow" onClick={this.nextImage} src="https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_right_icon.png" />
+
+                    <div className="btn-block">
+                        <img className="mobile-btn" onClick={this.previousImage} src="https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_left_icon.png" />
+                        <img className="mobile-btn" onClick={this.goBackGallery}src="https://s3.amazonaws.com/kevingrimm.com/img/icons/close.png" />
+                        <img className="mobile-btn" onClick={this.previousImage} src="https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_right_icon.png" />
                     </div>
                 </div>
             </div>
