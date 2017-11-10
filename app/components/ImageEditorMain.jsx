@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Router, Route, Link, IndexRoute, hashHistory} from 'react-router-dom';
 
 export default class ImageEditorMain extends React.Component {
     constructor(props) {

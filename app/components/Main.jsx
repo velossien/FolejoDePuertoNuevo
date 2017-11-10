@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { StickyContainer, Sticky } from 'react-sticky';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import Banner from '../components/Banner';
-import Menubar from '../components/Menubar';
-import Gallery from '../components/Gallery';
-import About from '../components/About';
-import ImageView from '../components/ImageView';
+import Banner from '../components/Banner.jsx';
+import Menubar from '../components/Menubar.jsx';
+import Gallery from '../components/Gallery.jsx';
+import About from '../components/About.jsx';
+import ImageView from '../components/ImageView.jsx';
 
 export default class Main extends React.Component {
     constructor(props) {

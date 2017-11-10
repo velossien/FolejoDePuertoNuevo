@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { StickyContainer, Sticky } from 'react-sticky';
 
-import Gallery from '../components/Gallery';
-import About from '../components/About';
+import Gallery from '../components/Gallery.jsx';
+import About from '../components/About.jsx';
 
 export default class Menubar extends React.Component {
     constructor(props) {
