@@ -36,9 +36,8 @@
 		}
 
 		img{
-			width: 92%;
+			max-width: 92%;
 			display: block;
-			overflow: hidden;
 			margin:auto;
 
 			@include breakpoint(md){
@@ -47,7 +46,7 @@
 		}
 
 		.arrow{
-            width:4%;
+			width:4%;
             cursor: pointer;
 			opacity: 0.5;
 			filter: alpha(opacity=50); /* For IE8 and earlier */
