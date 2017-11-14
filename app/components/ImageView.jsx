@@ -60,7 +60,6 @@ export default class ImageView extends React.Component {
     };
 
     render() {
-        // const imgSrc = this.props.match.params.fullSizeSrc;
         const currentImgSrc = this.state.imgSrc;
 
         return (

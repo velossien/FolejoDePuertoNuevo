@@ -12,7 +12,8 @@ export default class Main extends React.Component {
         super(props);
 
         this.state = {
-            showHeader: true
+            showHeader: true,
+            newClassName: "main-container"
         };
 
         this.closeHeader = this.closeHeader.bind(this);
@@ -20,11 +21,17 @@ export default class Main extends React.Component {
     }
 
     closeHeader() {
-        this.setState({ showHeader: false });
+        this.setState({ 
+            showHeader: false,
+            newClassName: "imageview-main-container"
+         });
     };
 
     openHeader() {
-        this.setState({ showHeader: true });
+        this.setState({ 
+            showHeader: true,
+            newClassName: "main-container"
+         });
     };
 
     render() {
@@ -38,7 +45,7 @@ export default class Main extends React.Component {
         }
 
         return (
-            <div className='mainContainer'>
+            <div className={this.state.newClassName}>
                 {banner}
                 <StickyContainer>
                     {menubar}
