@@ -1,3 +1,3 @@
-# kevingrimm
-Kevin Grimm Website
-Website that will be using react, react router, babel and webpack.
+# Artist Portfolio for KG
+
+Portfolio website powered by React.
