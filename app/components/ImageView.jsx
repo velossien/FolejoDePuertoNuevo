@@ -73,7 +73,7 @@ export default class ImageView extends React.Component {
                     <div className="btn-block">
                         <img className="mobile-btn" onClick={this.previousImage} src="https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_left_icon.png" />
                         <img className="mobile-btn" onClick={this.goBackGallery}src="https://s3.amazonaws.com/kevingrimm.com/img/icons/close.png" />
-                        <img className="mobile-btn" onClick={this.previousImage} src="https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_right_icon.png" />
+                        <img className="mobile-btn" onClick={this.nextImage} src="https://s3.amazonaws.com/kevingrimm.com/img/icons/arrow_right_icon.png" />
                     </div>
                 </div>
             </div>
