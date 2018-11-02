@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Copyright from './Copyright.jsx';
 
 export default class About extends React.Component {
     constructor(props) {
@@ -24,9 +25,7 @@ export default class About extends React.Component {
                 <div className="line"></div>
                 <p><a href="mailto:kevingrimmartist@gmail.com">kevingrimmartist@gmail.com</a></p>
                 <div className="line"></div>
-                <div className="copyright">
-                    &copy; 2017 Grimm
-                </div>
+                <Copyright/>
             </div>
         );
     }

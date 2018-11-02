@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import images from "../js/Images.js";
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import Copyright from './Copyright.jsx';
 
 
 export default class Gallery extends React.Component {
@@ -25,9 +26,7 @@ export default class Gallery extends React.Component {
                         images={images}
                     />
                 </div>
-                <div className="copyright">
-                    <p>&copy; 2017 Grimm</p>
-                </div>
+                <Copyright/>
             </div>
         );
     };

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Copyright from './Copyright.jsx';
 
 export default class ImageEditorMain extends React.Component {
     constructor(props) {
@@ -18,9 +19,7 @@ export default class ImageEditorMain extends React.Component {
                     <button className="center">Submit</button>
                 </form>
 
-                <div className="copyright">
-                    <p>&copy; 2017 Grimm</p>
-                </div>
+                <Copyright/>
             </div>
         );
     };

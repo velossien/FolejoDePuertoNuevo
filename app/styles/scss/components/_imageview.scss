@@ -46,9 +46,10 @@
 		}
 
 		img{
+			max-height: 98vh;
 			max-width: 94%;
 			display: block;
-			margin:auto;
+			margin: auto;
 
 			@include breakpoint(md){
 				width:100%;

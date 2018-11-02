@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import Copyright from './Copyright.jsx';
 
 export default class ImageEditorLogin extends React.Component {
     constructor(props) {
@@ -19,9 +20,7 @@ export default class ImageEditorLogin extends React.Component {
                     </Link>
                 </form>
 
-                <div className="copyright">
-                    <p>&copy; 2017 Grimm</p>
-                </div>
+                <Copyright/>
             </div>
         );
     };
