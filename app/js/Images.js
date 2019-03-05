@@ -229,11 +229,6 @@ const images = [
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-westworld1.jpg',
         fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-westworld1.jpg'
     },
-    {   orderId:54,
-        title:'kevin-grimm-waves.jpg',
-        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-waves.jpg',
-        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-waves.jpg'
-    },
     {   orderId:53,
         title:'kevin-grimm-visitors.jpg',
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-visitors.jpg',
@@ -258,11 +253,6 @@ const images = [
         title:'kevin-grimm-sunset-in-the-deep-woods.jpg',
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-sunset-in-the-deep-woods.jpg',
         fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-sunset-in-the-deep-woods.jpg'
-    },
-    {   orderId:48,
-        title:'kevin-grimm-stranger-things.jpg',
-        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-stranger-things.jpg',
-        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-stranger-things.jpg'
     },
     {   orderId:47,
         title:'kevin-grimm-spacebackground.jpg',
@@ -323,11 +313,6 @@ const images = [
         title:'kevin-grimm-n-1599-heavy-lift-transport.jpg',
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-n-1599-heavy-lift-transport.jpg',
         fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-n-1599-heavy-lift-transport.jpg'
-    },
-    {   orderId:35,
-        title:'kevin-grimm-mother-of-dragons.jpg',
-        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-mother-of-dragons.jpg',
-        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-mother-of-dragons.jpg'
     },
     {   orderId:34,
         title:'kevin-grimm-motherland.jpg',
@@ -409,11 +394,6 @@ const images = [
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-darkstar.jpg',
         fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-darkstar.jpg'
     },
-    {   orderId:18,
-        title:'kevin-grimm-city-of-the-gods.jpg',
-        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-city-of-the-gods.jpg',
-        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-city-of-the-gods.jpg'
-    },
     {   orderId:17,
         title:'kevin-grimm-city-of-dreams.jpg',
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-city-of-dreams.jpg',
@@ -459,11 +439,6 @@ const images = [
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-broken-city.jpg',
         fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-broken-city.jpg'
     },
-    {   orderId:8,
-        title:'kevin-grimm-approaching-storm-clouds.jpg',
-        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-approaching-storm-clouds.jpg',
-        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-approaching-storm-clouds.jpg'
-    },
     {   orderId:7,
         title:'kevin-grimm-approaching-enemy.jpg',
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-approaching-enemy.jpg',
@@ -488,11 +463,6 @@ const images = [
         title:'kevin-grimm-airlock1.jpg',
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-airlock1.jpg',
         fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-airlock1.jpg'
-    },
-    {   orderId:2,
-        title:'kevin-grimm-airlock.jpg',
-        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-airlock.jpg',
-        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-airlock.jpg'
     },
     {   orderId:1,
         title:'kevin-grimm-aftermath.jpg',
