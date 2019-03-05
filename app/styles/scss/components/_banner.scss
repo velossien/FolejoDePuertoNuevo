@@ -39,25 +39,28 @@ header {
 			}
 		}
 
-		h1{		
-			font-size: 2rem;
+		h1 {
+			font-size: 2.3rem;
 			font-weight: bold;
 			text-align: center;
 			line-height: 3rem;
+			font-family: Montserrat;
 
 			@include breakpoint(md){
-				line-height: 2.5rem !important;
+				line-height: 2.5rem;;
 			}
 		}
+		
 		h3{
-			font-size: 1rem;
+			font-size: 1.8rem;
+			font-family: PT Sans Narrow;
 			text-align: center;
 			font-weight: 400;	
 			line-height: 3rem;	
+			padding-bottom: 0.75rem;
 
 			@include breakpoint(md){
-				font-size: 0.9rem !important;
-				line-height: 2.2rem;
+				font-size: 1.6rem;
 			}
 		}
 	}

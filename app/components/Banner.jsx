@@ -11,9 +11,9 @@ export default class Banner extends React.Component {
             <header>
                 <div className="artistBlock">
                     <Link to="/About"><img className="artistImg" src="https://s3.amazonaws.com/kevingrimm.com/img/artistImg.png" /></Link>
-                    <h1> Kevin Grimm </h1>
+                    <h1 id="artist-block-title-1">Painting With Light</h1>
                     <br />
-                    <h3> Environmental Concept Art and Character&nbsp;Design </h3>
+                    <h3 id="artist-block-title-2">The Digital Art of Kevin Grimm</h3>
                 </div>
                 <img className="banner" src='https://s3.amazonaws.com/kevingrimm.com/img/banner.jpg' />
             </header>
