@@ -5,8 +5,10 @@ import Menubar from './Menubar.jsx';
 import Gallery from './Gallery.jsx';
 import About from './About.jsx';
 import ImageView from './ImageView.jsx';
+import images from '../js/Images.js';
+import workImages from '../js/WorkImages.js';
 
-export default class Main extends React.Component {
+export default class Main extends Component {
   constructor(props) {
     super(props);
 
@@ -34,12 +36,11 @@ export default class Main extends React.Component {
   }
 
   render() {
-    let banner; let
-      menubar;
-
+    let banner; let menubar;
     if (this.state.showHeader) {
+      const isNotOnWorkImages = this.props.location.pathname.indexOf('WorkImages') === -1;
       banner = <Banner headerVisible={this.state.showHeader} />;
-      menubar = <Menubar headerVisible={this.state.showHeader} />;
+      menubar = isNotOnWorkImages ? <Menubar headerVisible={this.state.showHeader} /> : null;
     } else {
       banner, menubar = null;
     }
@@ -56,19 +57,25 @@ export default class Main extends React.Component {
               <Redirect to="/Gallery" />
             )}
           />
-
           <Route
             exact
             path="/Gallery"
             render={props => (
-              <Gallery {...props} onOpenGallery={this.openHeader} />
+              <Gallery {...props}
+                baseUrl="Gallery"
+                onOpenGallery={this.openHeader}
+                images={images} />
             )}
           />
           <Route
             exact
             path="/Gallery/:fullSizeSrc"
             render={props => (
-              <ImageView {...props} showHeader={this.state.showHeader} onOpenImageView={this.closeHeader} />
+              <ImageView {...props}
+                baseUrl="Gallery"
+                images={images}
+                showHeader={this.state.showHeader}
+                onOpenImageView={this.closeHeader} />
             )}
           />
           <Route
@@ -76,6 +83,29 @@ export default class Main extends React.Component {
             path="/About"
             render={props => (
               <About {...props} showHeader={this.state.showHeader} onOpenAbout={this.openHeader} />
+            )}
+          />
+          <Route
+            exact
+            path="/WorkImages"
+            render={props => (
+              <Gallery {...props}
+                baseUrl="WorkImages"
+                onOpenGallery={this.openHeader}
+                images={workImages}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/WorkImages/:fullSizeSrc"
+            render={props => (
+              <ImageView {...props}
+                baseUrl="WorkImages"
+                images={workImages}
+                showHeader={this.state.showHeader}
+                onOpenImageView={this.closeHeader}
+              />
             )}
           />
         </Switch>

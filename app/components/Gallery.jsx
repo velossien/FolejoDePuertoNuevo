@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import images from '../js/Images.js';
+import PropTypes from 'prop-types';
 import GalleryList from './GalleryList.jsx';
 import Copyright from './Copyright.jsx';
 
@@ -13,11 +13,16 @@ export default class Gallery extends Component {
       <div>
         <div className="gallery">
           <GalleryList
-            images={images}
+            baseUrl={this.props.baseUrl}
+            images={this.props.images}
           />
         </div>
         <Copyright />
       </div>
     );
   }
+}
+
+Gallery.propTypes = {
+  baseUrl: PropTypes.string.isRequired,
 }

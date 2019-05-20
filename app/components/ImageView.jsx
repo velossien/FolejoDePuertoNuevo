@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import images from '../js/Images.js';
 
-export default class ImageView extends React.Component {
+export default class ImageView extends Component {
   constructor(props) {
     super(props);
 
@@ -16,16 +14,16 @@ export default class ImageView extends React.Component {
   }
 
   goBackGallery() {
-    this.props.history.push('/Gallery');
+    this.props.history.push('/' + this.props.baseUrl);
   }
 
   previousImage() {
+    const { images } = this.props;
     const currentImageIndex = images.map(img => img.title).indexOf(this.state.imgSrc);
 
     let previousImageTitle;
     if (currentImageIndex == 0) {
       previousImageTitle = (images[(images.length) - 1].title);
-      console.log(`We are at the beginning!${previousImageTitle}`);
     } else {
       previousImageTitle = images[(currentImageIndex - 1)].title;
     }
@@ -33,16 +31,16 @@ export default class ImageView extends React.Component {
     this.setState({
       imgSrc: previousImageTitle,
     });
-    this.props.history.push(`/Gallery/${previousImageTitle}`);
+    this.props.history.push(`/${this.props.baseUrl}/${previousImageTitle}`);
   }
 
   nextImage() {
+    const { images } = this.props;
     const currentImageIndex = images.map(img => img.title).indexOf(this.state.imgSrc);
 
     let nextImageTitle;
     if (currentImageIndex == (images.length - 1)) {
       nextImageTitle = (images[0].title);
-      console.log(`We are at the end!${nextImageTitle}`);
     } else {
       nextImageTitle = images[(currentImageIndex + 1)].title;
     }
@@ -50,7 +48,7 @@ export default class ImageView extends React.Component {
     this.setState({
       imgSrc: nextImageTitle,
     });
-    this.props.history.push(`/Gallery/${nextImageTitle}`);
+    this.props.history.push(`/${this.props.baseUrl}/${nextImageTitle}`);
   }
 
   componentDidMount() {
@@ -59,7 +57,6 @@ export default class ImageView extends React.Component {
 
   render() {
     const currentImgSrc = this.state.imgSrc;
-
     return (
       <div className="image-view">
         <img onClick={this.goBackGallery} className="back-button" src="https://s3.amazonaws.com/kevingrimm.com/img/icons/close.png" />

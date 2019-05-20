@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Image from './Image.jsx';
 
-export default function GalleryList({ images }) {
+export default function GalleryList({ baseUrl, images }) {
     const imageList = images.map((obj => (
         <Image
+            baseUrl={baseUrl}
             title={obj.title}
             thumbnailSrc={obj.thumbnailSrc}
             key={obj.orderId}
@@ -20,5 +21,6 @@ export default function GalleryList({ images }) {
 }
 
 GalleryList.propTypes = {
+    baseUrl: PropTypes.string.isRequired,
     images: PropTypes.array.isRequired,
 };
