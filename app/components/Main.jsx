@@ -39,7 +39,7 @@ export default class Main extends Component {
     let banner; let menubar;
     if (this.state.showHeader) {
       const isNotOnWorkImages = this.props.location.pathname.indexOf('WorkImages') === -1;
-      banner = <Banner headerVisible={this.state.showHeader} />;
+      banner = <Banner headerVisible={this.state.showHeader} isNotOnWorkImages={isNotOnWorkImages} />;
       menubar = isNotOnWorkImages ? <Menubar headerVisible={this.state.showHeader} /> : null;
     } else {
       banner, menubar = null;
