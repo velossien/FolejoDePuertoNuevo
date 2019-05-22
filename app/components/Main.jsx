@@ -6,7 +6,7 @@ import Gallery from './Gallery.jsx';
 import About from './About.jsx';
 import ImageView from './ImageView.jsx';
 import images from '../js/Images.js';
-import workImages from '../js/WorkImages.js';
+import gameArtImages from '../js/gameArtImages.js';
 
 export default class Main extends Component {
   constructor(props) {
@@ -38,9 +38,9 @@ export default class Main extends Component {
   render() {
     let banner; let menubar;
     if (this.state.showHeader) {
-      const isNotOnWorkImages = this.props.location.pathname.indexOf('WorkImages') === -1;
-      banner = <Banner headerVisible={this.state.showHeader} isNotOnWorkImages={isNotOnWorkImages} />;
-      menubar = isNotOnWorkImages ? <Menubar headerVisible={this.state.showHeader} /> : null;
+      const isNotOnGameArt = this.props.location.pathname.indexOf('gameart') === -1;
+      banner = <Banner headerVisible={this.state.showHeader} isNotOnGameArt={isNotOnGameArt} />;
+      menubar = isNotOnGameArt ? <Menubar headerVisible={this.state.showHeader} /> : null;
     } else {
       banner, menubar = null;
     }
@@ -87,22 +87,22 @@ export default class Main extends Component {
           />
           <Route
             exact
-            path="/WorkImages"
+            path="/gameart"
             render={props => (
               <Gallery {...props}
-                baseUrl="WorkImages"
+                baseUrl="gameart"
                 onOpenGallery={this.openHeader}
-                images={workImages}
+                images={gameArtImages}
               />
             )}
           />
           <Route
             exact
-            path="/WorkImages/:fullSizeSrc"
+            path="/gameart/:fullSizeSrc"
             render={props => (
               <ImageView {...props}
-                baseUrl="WorkImages"
-                images={workImages}
+                baseUrl="gameart"
+                images={gameArtImages}
                 showHeader={this.state.showHeader}
                 onOpenImageView={this.closeHeader}
               />
