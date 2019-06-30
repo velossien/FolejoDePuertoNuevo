@@ -7,6 +7,9 @@ import About from './About.jsx';
 import ImageView from './ImageView.jsx';
 import images from '../js/Images.js';
 import gameArtImages from '../js/gameArtImages.js';
+import ImageEditorLogin from '../components/ImageEditorLogin.jsx';
+import ImageEditorMain from '../components/ImageEditorMain.jsx';
+
 
 export default class Main extends Component {
   constructor(props) {
@@ -107,6 +110,16 @@ export default class Main extends Component {
                 onOpenImageView={this.closeHeader}
               />
             )}
+          />
+          <Route
+            exact
+            path="/admin"
+            render={() => (<ImageEditorLogin />)}
+          />
+          <Route
+            exact
+            path="/admin_editor"
+            render={() => (<ImageEditorMain />)}
           />
         </Switch>
       </div>

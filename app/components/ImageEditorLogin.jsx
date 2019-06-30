@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Copyright from './Copyright.jsx';
 
-export default class ImageEditorLogin extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+class ImageEditorLogin extends Component {
   render() {
     return (
       <div className="Admin">
@@ -25,3 +21,5 @@ export default class ImageEditorLogin extends React.Component {
     );
   }
 }
+
+export default ImageEditorLogin;

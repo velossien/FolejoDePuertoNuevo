@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import Copyright from './Copyright.jsx';
 
-export default class ImageEditorMain extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+class ImageEditorMain extends Component {
   render() {
     return (
       <div className="Admin">
@@ -23,4 +19,6 @@ export default class ImageEditorMain extends React.Component {
       </div>
     );
   }
-}
+};
+
+export default ImageEditorMain;
