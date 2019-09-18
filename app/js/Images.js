@@ -1,10 +1,29 @@
 const images = [
-    {   orderId:107,
+    {
+        title:'kevin-grimm-ARMCO.jpg',
+        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-ARMCO.jpg',
+        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-ARMCO.jpg'
+    },
+    {
+        title:'kevin-grimm-CSX-fall-run.jpg',
+        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-CSX-fall-run.jpg',
+        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-CSX-fall-run.jpg'
+    },{
+        title:'kevin-grimm-canyon-rim.jpg',
+        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-canyon-rim.jpg',
+        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-canyon-rim.jpg'
+    },
+    {
+        title:'kevin-grimm-venice.jpg',
+        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-venice.jpg',
+        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-venice.jpg'
+    },
+    {
         title:'kevin-grimm-amsterdam.jpg',
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-amsterdam.jpg',
         fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-amsterdam.jpg'
     },
-    {   orderId:106,
+    {
         title:'kevin-grimm-notre-dame.jpg',
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-notre-dame.jpg',
         fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-notre-dame.jpg'
@@ -49,6 +68,11 @@ const images = [
         title:'kevin-grimm-cretaceous-predator.jpg',
         thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-cretaceous-predator.jpg',
         fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-cretaceous-predator.jpg'
+    },
+    {   orderId:97,
+        title:'kevin-grimm-morning-on-the-canyon-ridge.jpg',
+        thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-morning-on-the-canyon-ridge.jpg',
+        fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-morning-on-the-canyon-ridge.jpg'
     },
     {   orderId:97,
         title:'kevin-grimm-lilypond.jpg',
