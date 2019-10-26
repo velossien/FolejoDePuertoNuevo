@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import { Route, HashRouter } from 'react-router-dom';
-import images from '../js/Images.js';
-import Main from '../components/Main.jsx';
+import React from "react";
+import { Route, HashRouter } from "react-router-dom";
+import Main from "../components/Main.jsx";
 
-const routes = (
+const Routes = (
   <HashRouter>
     <Route path="/" component={Main} />
   </HashRouter>
 );
 
-export default routes;
+export default Routes;

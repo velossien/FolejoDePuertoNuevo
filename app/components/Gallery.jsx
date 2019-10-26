@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import GalleryList from './GalleryList.jsx';
-import Copyright from './Copyright.jsx';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import GalleryList from "./GalleryList.jsx";
+import Copyright from "./Copyright.jsx";
 
-export default class Gallery extends Component {
+class Gallery extends Component {
   componentDidMount() {
     this.props.onOpenGallery();
   }
@@ -24,5 +24,7 @@ export default class Gallery extends Component {
 }
 
 Gallery.propTypes = {
-  baseUrl: PropTypes.string.isRequired,
-}
+  baseUrl: PropTypes.string.isRequired
+};
+
+export default Gallery;

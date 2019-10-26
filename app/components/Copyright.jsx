@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from "react";
 
-export default function Copyright() {
+const Copyright = () => {
   return (
-    <div className="copyright">
-            &copy;
-      {' '}
-      {new Date().getFullYear()}
-      {' '}
-Grimm
-    </div>
+    <div className="copyright">&copy; {new Date().getFullYear()} Grimm</div>
   );
-}
+};
+
+export default Copyright;
