@@ -1,5 +1,31 @@
 const images = [
   {
+    title: 'kevin-grimm-bohemian-afternoon.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-bohemian-afternoon.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-bohemian-afternoon.jpg',
+  },
+  {
+    title: 'kevin-grimm-trust.jpg',
+    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-trust.jpg',
+    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-trust.jpg',
+  },
+  {
+    title: 'kevin-grimm-victorian-princess.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-victorian-princess.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-victorian-princess.jpg',
+  },
+  {
+    title: 'kevin-grimm-woodland-pond.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-woodland-pond.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-woodland-pond.jpg',
+  },
+  {
     title: 'kevin-grimm-a-simpler-time.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-a-simpler-time.jpg',
