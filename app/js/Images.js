@@ -1,5 +1,19 @@
 const images = [
   {
+    title: 'kevin-grimm-songs-of-the-muse.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-songs-of-the-muse.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-songs-of-the-muse.jpg',
+  },
+  {
+    title: 'kevin-grimm-viewing-the-new-work.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-viewing-the-new-work.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-viewing-the-new-work.jpg',
+  },
+  {
     title: 'kevin-grimm-bohemian-afternoon.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-bohemian-afternoon.jpg',
@@ -122,7 +136,13 @@ const images = [
     fullSizeSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-storm-chased.jpg',
   },
-
+  {
+    title: 'kevin-grimm-edward-grimm.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-edward-grimm.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-edward-grimm.jpg',
+  },
   {
     orderId: 103,
     title: 'kevin-grimm-justins-jellybean.jpg',
