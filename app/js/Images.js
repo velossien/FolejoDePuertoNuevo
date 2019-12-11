@@ -1,5 +1,34 @@
 const images = [
   {
+    title: 'kevin-grimm-victorian-christmas.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-victorian-christmas.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-victorian-christmas.jpg',
+  },
+  {
+    title: 'kevin-grimm-santorini-in-sight.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-santorini-in-sight.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-santorini-in-sight.jpg',
+  },
+  {
+    title: 'kevin-grimm-roman-senate.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-roman-senate.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-roman-senate.jpg',
+  },
+  {
+    title: 'kevin-grimm-fur-trader.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-fur-trader.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-fur-trader.jpg',
+  },
+
+  {
     title: 'kevin-grimm-songs-of-the-muse.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-songs-of-the-muse.jpg',
@@ -553,10 +582,10 @@ const images = [
   },
   {
     orderId: 55,
-    title: 'kevin-grimm-westworld1.jpg',
+    title: 'kevin-grimm-market-patrol.jpg',
     thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-westworld1.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-westworld1.jpg',
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-market-patrol.jpg',
+    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-market-patrol.jpg',
   },
   {
     orderId: 53,
