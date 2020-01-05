@@ -1,5 +1,54 @@
 const images = [
   {
+    title: 'kevin-grimm-down-by-the-old-church.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-down-by-the-old-church.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-down-by-the-old-church.jpg',
+  },
+  {
+    title: 'kevin-grimm-early-morning-lesson.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-early-morning-lesson.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-early-morning-lesson.jpg',
+  },
+  {
+    title: 'kevin-grimm-limbs.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-limbs.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-limbs.jpg',
+  },
+  {
+    title: 'kevin-grimm-paris.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-paris.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-paris.jpg',
+  },
+  {
+    title: 'kevin-grimm-red-riding-hood.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-red-riding-hood.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-red-riding-hood.jpg',
+  },
+  {
+    title: 'kevin-grimm-south-pacific-encounter.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-south-pacific-encounter.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-south-pacific-encounter.jpg',
+  },
+  {
+    title: 'kevin-grimm-winter-wonderland.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-winter-wonderland.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-winter-wonderland.jpg',
+  },
+  {
     title: 'kevin-grimm-victorian-christmas.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-victorian-christmas.jpg',
