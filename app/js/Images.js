@@ -1,5 +1,33 @@
 const images = [
   {
+    title: 'kevin-grimm-by-the-lake.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-by-the-lake.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-by-the-lake.jpg',
+  },
+  {
+    title: 'kevin-grimm-forest-prayer.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-forest-prayer.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-forest-prayer.jpg',
+  },
+  {
+    title: 'kevin-grimm-main-street.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-main-street.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-main-street.jpg',
+  },
+  {
+    title: 'kevin-grimm-shinto-shrine.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-shinto-shrine.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-shinto-shrine.jpg',
+  },
+  {
     title: 'kevin-grimm-down-by-the-old-church.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-down-by-the-old-church.jpg',
