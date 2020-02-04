@@ -1,5 +1,33 @@
 const images = [
   {
+    title: 'kevin-grimm-the-asylum.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-the-asylum.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-the-asylum.jpg',
+  },
+  {
+    title: 'kevin-grimm-elk-and-stream.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-elk-and-stream.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-elk-and-stream.jpg',
+  },
+  {
+    title: 'kevin-grimm-forest-dreams.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-forest-dreams.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-forest-dreams.jpg',
+  },
+  {
+    title: 'kevin-grimm-last-light.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-last-light.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-last-light.jpg',
+  },
+  {
     title: 'kevin-grimm-by-the-lake.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-by-the-lake.jpg',
@@ -192,6 +220,18 @@ const images = [
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-the-letter.jpg',
   },
   {
+    title: 'kevin-grimm-snowstorm.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-snowstorm.jpg',
+    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-snowstorm.jpg',
+  },
+  {
+    title: 'kevin-grimm-transport-interior.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-transport-interior.jpg',
+    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-transport-interior.jpg',
+  },
+  {
     title: 'kevin-grimm-ARMCO.jpg',
     thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-ARMCO.jpg',
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-ARMCO.jpg',
@@ -241,6 +281,13 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-storm-chased.jpg',
     fullSizeSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-storm-chased.jpg',
+  },
+  {
+    title: 'kevin-grimm-anguish.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-anguish.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-anguish.jpg',
   },
   {
     title: 'kevin-grimm-edward-grimm.jpg',
