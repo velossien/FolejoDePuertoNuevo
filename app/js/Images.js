@@ -1,5 +1,19 @@
 const images = [
   {
+    title: 'kevin-grimm-alpha-9.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-alpha-9.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-alpha-9.jpg',
+  },
+  {
+    title: 'kevin-grimm-danger-approaches.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-danger-approaches.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-danger-approaches.jpg',
+  },
+  {
     title: 'kevin-grimm-the-asylum.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-the-asylum.jpg',
