@@ -84,13 +84,6 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-down-by-the-old-church.jpg',
   },
   {
-    title: 'kevin-grimm-early-morning-lesson.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-early-morning-lesson.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-early-morning-lesson.jpg',
-  },
-  {
     title: 'kevin-grimm-limbs.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-limbs.jpg',
@@ -147,21 +140,6 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-roman-senate.jpg',
   },
   {
-    title: 'kevin-grimm-fur-trader.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-fur-trader.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-fur-trader.jpg',
-  },
-
-  {
-    title: 'kevin-grimm-songs-of-the-muse.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-songs-of-the-muse.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-songs-of-the-muse.jpg',
-  },
-  {
     title: 'kevin-grimm-viewing-the-new-work.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-viewing-the-new-work.jpg',
@@ -209,30 +187,11 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-as-luck-would-have-it.jpg',
   },
   {
-    title: 'kevin-grimm-cebu.jpg',
-    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-cebu.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-cebu.jpg',
-  },
-  {
-    title: 'kevin-grimm-high-country.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-high-country.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-high-country.jpg',
-  },
-  {
     title: 'kevin-grimm-sedona-sunrise.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-sedona-sunrise.jpg',
     fullSizeSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-sedona-sunrise.jpg',
-  },
-  {
-    title: 'kevin-grimm-sunflowers-and-chaps.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-sunflowers-and-chaps.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-sunflowers-and-chaps.jpg',
   },
   {
     title: 'kevin-grimm-the-letter.jpg',
@@ -262,13 +221,6 @@ const images = [
     title: 'kevin-grimm-ARMCO.jpg',
     thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-ARMCO.jpg',
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-ARMCO.jpg',
-  },
-  {
-    title: 'kevin-grimm-CSX-fall-run.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-CSX-fall-run.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-CSX-fall-run.jpg',
   },
   {
     title: 'kevin-grimm-canyon-rim.jpg',
@@ -355,13 +307,6 @@ const images = [
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-a-days-work.jpg',
   },
   {
-    orderId: 99,
-    title: 'kevin-grimm-countryside.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-countryside.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-countryside.jpg',
-  },
-  {
     orderId: 98,
     title: 'kevin-grimm-cretaceous-predator.jpg',
     thumbnailSrc:
@@ -382,12 +327,6 @@ const images = [
     title: 'kevin-grimm-lilypond.jpg',
     thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-lilypond.jpg',
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-lilypond.jpg',
-  },
-  {
-    orderId: 96,
-    title: 'kevin-grimm-lookout.jpg',
-    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-lookout.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-lookout.jpg',
   },
   {
     orderId: 95,
@@ -412,27 +351,12 @@ const images = [
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-shade.jpg',
   },
   {
-    orderId: 92,
-    title: 'kevin-grimm-sunshine-in-the-forest.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-sunshine-in-the-forest.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-sunshine-in-the-forest.jpg',
-  },
-  {
     orderId: 91,
     title: 'kevin-grimm-the-mystic-2.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-the-mystic-2.jpg',
     fullSizeSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-the-mystic-2.jpg',
-  },
-  {
-    orderId: 90,
-    title: 'kevin-grimm-trails-end.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-trails-end.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-trails-end.jpg',
   },
   {
     orderId: 89,
@@ -448,14 +372,6 @@ const images = [
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-archer.jpg',
   },
   {
-    orderId: 87,
-    title: 'kevin-grimm-cottage-in-the-country.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-cottage-in-the-country.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-cottage-in-the-country.jpg',
-  },
-  {
     orderId: 86,
     title: 'kevin-grimm-fall-in-utah.jpg',
     thumbnailSrc:
@@ -464,41 +380,12 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-fall-in-utah.jpg',
   },
   {
-    orderId: 85,
-    title: 'kevin-grimm-heading-home.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-heading-home.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSizekevin-grimm-heading-home.jpg',
-  },
-  {
-    orderId: 84,
-    title: 'kevin-grimm-lost-love.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-lost-love.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-lost-love.jpg',
-  },
-  {
     orderId: 83,
     title: 'kevin-grimm-market-blessing.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-market-blessing.jpg',
     fullSizeSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-market-blessing.jpg',
-  },
-  {
-    orderId: 82,
-    title: 'kevin-grimm-morning-fog.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-morning-fog.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-morning-fog.jpg',
-  },
-  {
-    orderId: 81,
-    title: 'kevin-grimm-mountain-ranch.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-mountain-ranch.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-mountain-ranch.jpg',
   },
   {
     orderId: 80,
@@ -515,14 +402,6 @@ const images = [
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-solitude.jpg',
   },
   {
-    orderId: 78,
-    title: 'kevin-grimm-tending-the-flock.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-tending-the-flock.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-tending-the-flock.jpg',
-  },
-  {
     orderId: 77,
     title: 'kevin-grimm-pilgrimage.jpg',
     thumbnailSrc:
@@ -537,47 +416,12 @@ const images = [
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-secret-spot.jpg',
   },
   {
-    orderId: 75,
-    title: 'kevin-grimm-stream.jpg',
-    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-stream.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-stream.jpg',
-  },
-  {
-    orderId: 74,
-    title: 'kevin-grimm-sunset-beach.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-sunset-beach.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-sunset-beach.jpg',
-  },
-  {
-    orderId: 73,
-    title: 'kevin-grimm-fall.jpg',
-    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-fall.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-fall.jpg',
-  },
-  {
-    orderId: 72,
-    title: 'kevin-grimm-friendship.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-friendship.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-friendship.jpg',
-  },
-  {
     orderId: 71,
     title: 'kevin-grimm-an-early-start.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-an-early-start.jpg',
     fullSizeSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-an-early-start.jpg',
-  },
-  {
-    orderId: 70,
-    title: 'kevin-grimm-first-signs-of-fall.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-first-signs-of-fall.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-first-signs-of-fall.jpg',
   },
   {
     orderId: 69,
@@ -670,14 +514,6 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-end-of-the-season.jpg',
     fullSizeSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-end-of-the-season.jpg',
-  },
-  {
-    orderId: 11,
-    title: 'kevin-grimm-canadian-express.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-canadian-express.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-canadian-express.jpg',
   },
   {
     orderId: 64,
