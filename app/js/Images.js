@@ -1,5 +1,12 @@
 const images = [
   {
+    title: 'kevin-grimm-down-by-the-pond.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-down-by-the-pond.jpg',
+    fullSizeSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-down-by-the-pond.jpg',
+  },
+  {
     title: 'kevin-grimm-alpha-9.jpg',
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-alpha-9.jpg',
@@ -232,6 +239,12 @@ const images = [
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-the-letter.jpg',
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-the-letter.jpg',
+  },
+  {
+    title: 'kevin-grimm-window-shopping.jpg',
+    thumbnailSrc:
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-window-shopping.jpg',
+    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-window-shopping.jpg',
   },
   {
     title: 'kevin-grimm-snowstorm.jpg',
