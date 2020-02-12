@@ -792,11 +792,11 @@ const images = [
   },
   {
     orderId: 101,
-    title: 'kevin-grimm-deep-in-the-woods.jpg',
+    title: 'kevin-grimm-deep-in-the-woods2.jpg',
     thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-deep-in-the-woods.jpg',
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-deep-in-the-woods2.jpg',
     fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-deep-in-the-woods.jpg',
+      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-deep-in-the-woods2.jpg',
   },
   {
     orderId: 100,
@@ -847,12 +847,6 @@ const images = [
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-yellowstone.jpg',
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-yellowstone.jpg',
-  },
-  {
-    orderId: 88,
-    title: 'kevin-grimm-archer.jpg',
-    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-archer.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-archer.jpg',
   },
   {
     orderId: 86,
