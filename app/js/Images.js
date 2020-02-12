@@ -248,10 +248,10 @@ const images = [
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-hiding-cow.jpg',
   },
   {
-    title: 'kevin-grimm-city-dairy.jpg',
+    title: 'kevin-grimm-coming-to-earth-city1.jpg',
     thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-city-dairy.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-city-dairy.jpg',
+      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-coming-to-earth-city1.jpg',
+    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-coming-to-earth-city1.jpg',
   },
   {
     title: '+kevin-grimm-deep-in-the-woods.jpg',
@@ -492,41 +492,6 @@ const images = [
     thumbnailSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-background-concept-3.jpg',
     fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-background-concept-3.jpg',
-  },
-  {
-    orderId: 2,
-    title: '+kevin-grimm-444.jpg',
-    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/+kevin-grimm-444.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/+kevin-grimm-444.jpg',
-  },
-  {
-    orderId: 16,
-    title: '+kevin-grimm-coming-to-earth-city.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/+kevin-grimm-coming-to-earth-city.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/+kevin-grimm-coming-to-earth-city.jpg',
-  },
-  {
-    orderId: 18,
-    title: '+kevin-grimm-dark-woods.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/+kevin-grimm-dark-woods.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/+kevin-grimm-dark-woods.jpg',
-  },
-  {
-    orderId: 25,
-    title: '+kevin-grimm-gas-station-pieces.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/+kevin-grimm-gas-station-pieces.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/+kevin-grimm-gas-station-pieces.jpg',
-  },
-  {
-    orderId: 28,
-    title: '+kevin-grimm-hiding2.jpg',
-    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/+kevin-grimm-hiding2.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/+kevin-grimm-hiding2.jpg',
   },
   {
     title: 'kevin-grimm-down-by-the-pond.jpg',
@@ -791,14 +756,6 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-morning-prayer.jpg',
   },
   {
-    orderId: 101,
-    title: 'kevin-grimm-deep-in-the-woods2.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-deep-in-the-woods2.jpg',
-    fullSizeSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-deep-in-the-woods2.jpg',
-  },
-  {
     orderId: 100,
     title: 'kevin-grimm-a-days-work.jpg',
     thumbnailSrc:
@@ -977,13 +934,6 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-end-of-the-season.jpg',
   },
   {
-    orderId: 60,
-    title: 'kevin-grimm-away-team.jpg',
-    thumbnailSrc:
-      'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-away-team.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-away-team.jpg',
-  },
-  {
     orderId: 59,
     title: 'kevin-grimm-badass1.jpg',
     thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-badass1.jpg',
@@ -1012,10 +962,9 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-justinsjellybean.jpg',
   },
   {
-    orderId: 27,
-    title: 'kevin-grimm-hiding.jpg',
-    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-hiding.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-hiding.jpg',
+    title: '+kevin-grimm-hiding2.jpg',
+    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/+kevin-grimm-hiding2.jpg',
+    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/+kevin-grimm-hiding2.jpg',
   },
   {
     orderId: 26,
@@ -1052,12 +1001,6 @@ const images = [
       'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-alpha-9-patrol.jpg',
     fullSizeSrc:
       'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-alpha-9-patrol.jpg',
-  },
-  {
-    orderId: 3,
-    title: 'kevin-grimm-airlock1.jpg',
-    thumbnailSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/thumbnails/kevin-grimm-airlock1.jpg',
-    fullSizeSrc: 'https://s3.amazonaws.com/kevingrimm.com/img/fullSize/kevin-grimm-airlock1.jpg',
   },
 ];
 
